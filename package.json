@@ -1,0 +1,17 @@
+{
+  "name": "cl-porfolio",
+  "version": "1.0.0",
+  "description": "portafolio front",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "portafolio"
+  ],
+  "author": "cindy lópez",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
