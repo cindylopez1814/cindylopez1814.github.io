@@ -19,7 +19,7 @@ body, html {
   padding: 0;
   list-style-type: none;
   position: fixed;
-  width: 30vw;
+  width: 10vw;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
@@ -55,7 +55,7 @@ body, html {
   transform: scale(1.5);
   background-color: transparent;
   transition: 0.3s;
-  margin-left: 2%;
+  margin-left: 25%;
 }
 .scrollspy-wrapper .table-of-contents i.active a {
   color: transparent;
@@ -79,8 +79,6 @@ body, html {
 
 #menuContainer {
   box-sizing: border-box;
-  position: relative;
-  top: 20%;
 }
 
 .containerButton {
