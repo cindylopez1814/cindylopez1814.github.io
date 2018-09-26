@@ -63,39 +63,16 @@
   color: black;
 }
 
-@media screen and (min-width: 750px) {
-  .card-body{
-    padding: 7.25rem;
-  }
-  .portrait,
-  #section .portrait{
-    height: 30vh;
-  }
-  .info{
-    margin: 0% 5%;
-    text-align: justify;
-  }
-  .info h5{
-    font-size: 30px;
-  }
-  .info p{
-    font-size: 18px;
-  }
 
-  #cvBtn{
-    display: inline;
-  }
-}
 
 /* proyectos */
 
 
 .tile
 {
-  width:380px;
-  height:380px;
-  margin:10px;
-  background-color:#99aeff;
+  height:45vh;
+  margin: 3% 5%;
+  background-color: transparent;
   display:inline-block;
   background-size:cover;
   position:relative;
@@ -104,11 +81,14 @@
   box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
   overflow:hidden;
   color:white;
-  font-family:'Roboto';
-  
+  text-align: center;  
 }
-.tile img
-{
+
+.card-body{
+  width: 100%;
+}
+
+.tile img {
   height:100%;
   width:100%;
   position:absolute;
@@ -116,25 +96,26 @@
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
+  background-size: contain;
+  background-position: center;
+  padding: 0% 3%
 }
-.tile .text
-{
-/*   z-index:99; */
-  position:absolute;
-  padding:30px;
-  height:calc(100% - 60px);
+.tile .text {
+  width: 90%;
+  margin: 0% 5%;
 }
 
-.tile h1
+.tile h2
 {
   font-weight:100;
-  margin:20px 0 0 0;
-   transform: translateX(200px);
+  margin:5%;
+  transform: translateX(200px);
 }
 .tile p
 {
+  font-size: 15px;
   font-weight:300;
-  margin:20px 0 0 0;
+  text-align: center  ;
   line-height: 25px;
   transform: translateX(-200px);
   transition-delay: 0.2s;
@@ -146,7 +127,7 @@
 }
 .tile:hover
 {
-background-color:#99aeff;
+background-color:black;
 box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:scale(1.05);
 }
@@ -154,10 +135,18 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 {
   opacity: 0.2;
 }
-.tile:hover .img{
-  content: url('../../assets/img/registro-visita.png')
-
+.tile:hover #imgConect {
+  content: url('../../assets/img/conetapp-wall.png')
 }
+
+.tile:hover #imgIf {
+  content: url('../../assets/img/registro-if.png')
+}
+
+.tile:hover #imgFood {
+  content: url('../../assets/img/food-map.png')
+}
+
 .tile:hover .animate-text
 {
   transform:translateX(0);
@@ -181,13 +170,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 .dots 
 {
-    width: 10vw;
-    background-color: currentColor;
-    display:block;
+    width: 20vw;
+    display:inline;
     color: black;
   opacity:0;
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
+  padding: 2%;
  
 }
 
@@ -212,4 +201,38 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 #section4{
   height: 200%;
+}
+
+@media screen and (min-width: 750px) {
+  .card-body{
+    padding: 7.25rem;
+  }
+  .portrait,
+  #section .portrait{
+    height: 30vh;
+  }
+  .info{
+    margin: 0% 5%;
+    text-align: justify;
+  }
+  .info h5{
+    font-size: 30px;
+  }
+  .info p{
+    font-size: 18px;
+  }
+
+  #cvBtn{
+    display: inline;
+  }
+
+  .tile
+  {
+    height: 50vh;
+    margin: 0% 0% 0% 8%;
+  }
+
+  .tile img {
+    padding: 0%;
+  }
 }
