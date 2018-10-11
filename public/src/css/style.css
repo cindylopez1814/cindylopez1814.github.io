@@ -135,17 +135,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 {
   opacity: 0.2;
 }
-.tile:hover #imgConect {
-  content: url('../../assets/img/conetapp-wall.png')
-}
-
-.tile:hover #imgIf {
-  content: url('../../assets/img/registro-if.png')
-}
-
-.tile:hover #imgFood {
-  content: url('../../assets/img/food-map.png')
-}
 
 .tile:hover .animate-text
 {
