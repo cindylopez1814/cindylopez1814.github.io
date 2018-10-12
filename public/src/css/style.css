@@ -1,9 +1,15 @@
-#gradient
-{
- width: 100%;
- height: 800px;
- padding: 0px;
- margin: 0px;
+canvas  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000000;
+  top: -11%;
+}
+
+#menuContainer {
+  z-index: 2;
+  position: absolute;
+  top: 57%;
 }
 
 .card{
@@ -16,8 +22,12 @@
   top: 5%;
 }
 
-#section3 .card{
-  background-color: rgba(0, 0, 0, 0.26)
+#section1 {
+  background: #000000;
+}
+
+#section2 img {
+  width: 50vw;
 }
 
 .photo .portrait {
@@ -40,30 +50,35 @@
 }
 
 .info{
-  margin: 0% 8%;
+  margin: 0% 10%;
+  text-align: center;
 }
 
 .photo{
   box-sizing: border-box;
-  margin: 0% 8%;
+  margin: 7% 0%;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 20vh;
 }
 
-#section3 .content{
-  justify-content: space-between;
+
+.tech{
   display: inline;
 }
 
-.tech{
-  float: left;
-  padding: 5%;
-  background: beige;
-}
-
 .tech i{
-  color: black;
+  color: #fff;
 }
 
+.info .tools{
+  display: inline;
+}
 
+.skills {
+  display: none;
+}
 
 /* proyectos */
 
@@ -159,9 +174,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 .dots 
 {
-    width: 20vw;
-    display:inline;
-    color: black;
+  width: 20vw;
+  display:inline;
+  color: black;
   opacity:0;
   transition: transform 0.4s ease-out, opacity 0.5s ease;
   transform: translateY(30px);
@@ -198,11 +213,31 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   .portrait,
   #section .portrait{
-    height: 30vh;
+    height: 45vh;
+  }
+  .info .tools {
+    display: none;
+  }
+  #section2 img {
+    width: 15vw;
+  }
+  .skills {
+    display: block;
+  }
+  .tech{
+    display: block;
+  }
+  .photo{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30vw;
+    height: 70vh;
   }
   .info{
-    margin: 0% 5%;
     text-align: justify;
+    display: inline-block;
+    width: 30vw;
+    margin: 0%;
   }
   .info h5{
     font-size: 30px;
