@@ -30,31 +30,14 @@ body, html {
       display: block;
 			width: auto;
 			height: auto;
-			color: #fff;
+			color:black;
 			margin: 20% 5%;
 			background-color: transparent;
 			
-			a {
-				white-space: nowrap;
-				text-decoration: none;
-				display: block;
-				padding-left: 20px;
-				line-height: 1em;
-        width: 0;
-        font-size: 10px;
-				overflow: hidden;
-				color: white;
-			}
-			
 			&:hover {
 				
-				a {
-					width: 200px;
-					position: relative;
-					top: -3px;
+				i {
 					color: white;
-					text-transform: uppercase;
-					transition: .7s;
 				}
 			}
 			
@@ -63,10 +46,6 @@ body, html {
 				background-color: transparent;
         transition: .3s;
         margin-left: 25%;
-				
-				a {
-					color: transparent;
-				}
 			}
 		}
 	}
@@ -119,7 +98,7 @@ body, html {
     color: #fff;
     border: 0;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 20px;
     position: relative;
     overflow: hidden;
     font-weight: 600;
@@ -137,19 +116,19 @@ a span {
 }
 
 .line-one {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ce7f6b;
 }
 
 .line-two {
-  border-right: 1px solid #fff;
+  border-right: 1px solid #9662d3;
 }
 
 .line-three {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #a5486f;
 }
 
 .line-four {
-  border-left: 1px solid #fff;
+  border-left: 1px solid #759b93;
 }
 
 .first:hover {
@@ -264,11 +243,11 @@ a span {
 }
 
 // Background 
-$white: #fff;
-$orange: #FF7644;
-$green: #7FB069;
-$blue: #556270;
-$tran-speed: 60s;
+$white: rgb(255, 206, 206);
+$orange: rgb(238, 164, 137);
+$green: rgb(147, 201, 121);
+$blue: #a871be;
+$tran-speed: 40s;
 
 // Particle setting
 $particle-count: 200;
