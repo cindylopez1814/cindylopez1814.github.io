@@ -70,10 +70,11 @@ border: double 10px transparent;
 
 .info{
   margin: 0% 0% 0% 12%;
-  text-align: center;
+  text-align: justify;
   background: #333333;
   color: #ffffff;
   font-size: 10px;
+  padding: 2% 7%;
 }
 
 .info p {
@@ -105,7 +106,7 @@ border: double 10px transparent;
 
 .tools i {
   font-size: 20px;
-  margin: 3% 1% 0% 2%;
+  margin: 3% 1% 0% 4%;
 }
 
 .info .tools{
