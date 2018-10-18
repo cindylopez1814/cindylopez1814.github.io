@@ -43,6 +43,10 @@ a  {
   background: #000000;
 }
 
+#section1 .table-of-contents{
+  display: none;
+} 
+
 #section2 img {
   width: 50vw;
   height: 35vh;
@@ -76,6 +80,10 @@ border: double 10px transparent;
   font-size: 10px;
 }
 
+.info p {
+  margin-bottom: 0.5rem;
+}
+
 .info a {
   color: #fff;
   font-size: 15px;
@@ -99,9 +107,9 @@ border: double 10px transparent;
   color: #333333;
 }
 
-.tools .i {
-  font-size: 13px;
-  margin: 5% 1% 0% 1%;
+.tools i {
+  font-size: 15px;
+  margin: 3% 1% 0% 2%;
 }
 
 .info .tools{
@@ -324,6 +332,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   font-size: 40px;
 }
 
+.menuBody {
+  position: absolute;
+  top: 25%;
+  margin-left: 4px;
+  height: 50vh;
+}
+
 
 @media screen and (min-width: 750px) {
   #cvBtn {
@@ -387,7 +402,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   .info p{
     font-size: 18px;
     line-height: initial;
-    margin: 1rem 2rem;
+    margin: 1rem 3rem;
   }
 .info a{
   font-size: 25px;

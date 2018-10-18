@@ -9,6 +9,10 @@ body, html {
 
 /* colors */
 
+#section1 ul{
+  display: none;
+} 
+
 .scrollspy-wrapper {
 	position: absolute;
 	left: 0;
@@ -17,29 +21,30 @@ body, html {
 	height: 100%;
 	
 	.table-of-contents {
-		margin: 2%;
-		padding: 0;
-		list-style-type: none;
-		position: fixed;
-		width: 10vw;
-		top: 50%;
-		transform: translateY(-50%);
-		z-index: 999;
-		
+    padding: 1%;
+    list-style-type: none;
+    position: fixed;
+    width: 12vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    height: 100vh;
+    background: -webkit-linear-gradient(150deg, rgba(26, 188, 156, 0.35), rgba(152,41,196, 0.35), rgba(224,99,67, 0.35));		
 		i {
       display: block;
-			width: auto;
-			height: auto;
-			color:black;
-			margin: 20% 5%;
-			background-color: transparent;
+      width: auto;
+      height: auto;
+      color: black;
+      margin: 30px 5%;
+      font-size: 15px;
+      background-color: transparent;
 			
 			&:hover {
 				
 				i {
 					color: white;
 				}
-			}
+      }
 			
 			&.active {
 				transform: scale(1.5);
