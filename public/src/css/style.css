@@ -13,7 +13,7 @@ canvas  {
 .info h2 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 40px;
+  font-size: 23px;
   margin: 3%;
 }
 
@@ -72,11 +72,13 @@ border: double 10px transparent;
   text-align: center;
   background: #333333;
   color: #ffffff;
+  font-size: 12px;
 }
 
 .info a {
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
+  padding: 2%;
 }
 
 .photo{
@@ -94,6 +96,11 @@ border: double 10px transparent;
 
 .tech i{
   color: #333333;
+}
+
+.tools .i {
+  font-size: 13px;
+  margin: 5% 1% 0% 1%;
 }
 
 .info .tools{
@@ -370,15 +377,18 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     margin: 0% 2%;
     padding: 3%;
   }
-  .info h5{
-    font-size: 30px;
+  .info h2{
+    font-size: 40px;
   }
   .info p{
     font-size: 18px;
     line-height: initial;
     margin: 1rem 2rem;
   }
-
+.info a{
+  font-size: 25px;
+  padding: 4%;
+}
   .tile
   {
     height: 50vh;
