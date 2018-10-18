@@ -105,8 +105,8 @@ border: double 10px transparent;
 }
 
 .tools i {
-  font-size: 20px;
-  margin: 3% 1% 0% 4%;
+  font-size: 19px;
+  margin: 3% 1% 0% 2%;
 }
 
 .info .tools{
@@ -244,7 +244,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
 
 #section4{
-  height: 200%;
+  height: 115%;
 }
 
 /* Foto */
@@ -326,7 +326,8 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
 
 .skills .fab {
-  font-size: 40px;
+  font-size: 30px;
+  margin-top: 2%;
 }
 
 .menuBody {
@@ -337,7 +338,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1025px){
   #cvBtn {
     margin-top: 10%;
   }
@@ -372,8 +373,8 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     display: none;
   }
   .skills {
-    display: block;
-    margin: 0% 4%;
+    display: inline-block;
+    margin: 0%;
     text-align: center;
   }
   .tech{
@@ -384,14 +385,14 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     box-sizing: border-box;
     display: inline-block;
     width: 30vw;
-    height: 70vh;
+    margin-left: 2%;
   }
   .info{
     text-align: justify;
     display: inline-block;
     width: 37vw;
-    margin: 0% 2%;
-    padding: 3%;
+    margin: 0%;
+    padding: 2%;
   }
   .info h2{
     font-size: 40px;
@@ -418,5 +419,83 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   #menuContainer{
     top: 60%;
   }
-    
+  
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  #cvBtn{
+    margin-top: 6%;
+  }
+  #section2 img {
+    height: auto;
+  }
+  .skills h2 {
+    color: #333333;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .snip1581 h3 {
+    font-size: 28px;
+    font-weight: 400;
+  }  
+  .card-body{
+    padding: 1.25rem;
+    margin: 0%;
+    padding-top: 2%;
+  }
+  .portrait,
+  #section .portrait{
+    height: 45vh;
+  }
+  .info .tools {
+    display: none;
+  }
+  .skills {
+    display: inline-block;
+    text-align: center;
+    padding: 0%;
+  }
+  .tech{
+    display: block;
+  }
+
+  .photo{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 43vw;
+  }
+  .info{
+    text-align: justify;
+    display: inline-block;
+    width: 46vw;
+    margin: 0%;
+    padding: 2%;
+    height: 90vh;
+  }
+  .info h2{
+    font-size: 30px;
+  }
+  .info p{
+    font-size: 15px;
+    line-height: initial;
+    margin: 1rem 3rem;
+  }
+.info a{
+  font-size: 18px;
+  padding: 4%;
+}
+  .tile
+  {
+    height: 50vh;
+    margin: 0% 0% 0% 8%;
+  }
+
+  .tile img {
+    padding: 0%;
+  }
+
+  #menuContainer{
+    top: 60%;
+  }
 }
