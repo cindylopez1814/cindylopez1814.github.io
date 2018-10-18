@@ -10,8 +10,11 @@ canvas  {
   top: -11%;
 }
 
-.info h5{
+.info h2 {
+  text-align: center;
   font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin: 3%;
 }
 
 a  {
@@ -81,7 +84,7 @@ border: double 10px transparent;
   text-align: center;
   display: inline-block;
   width: 100%;
-  height: 20vh;
+  margin-left: 5%;
 }
 
 
@@ -301,7 +304,29 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform: scale(1.3) rotate(5deg);
 }
 
+.fab {
+  background: -webkit-linear-gradient(150deg, #1abc9c, #9829c4, #e06343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: .2em;
+  margin-bottom: 0;
+}
+
+.skills .fab {
+  font-size: 40px;
+}
+
+
 @media screen and (min-width: 750px) {
+  #cvBtn {
+    margin-top: 10%;
+  }
+  .skills h2 {
+    color: #333333;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 900;
+    font-size: 50px;
+  }
   .snip1581 h3 {
     font-size: 44px;
     font-weight: 400;
@@ -325,9 +350,12 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   .skills {
     display: block;
+    margin: 0% 4%;
+    text-align: center;
   }
   .tech{
     display: block;
+    margin-top: 10%;
   }
   .photo{
     box-sizing: border-box;
@@ -338,9 +366,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   .info{
     text-align: justify;
     display: inline-block;
-    width: 30vw;
-    margin: 0%;
-    padding: 5%;
+    width: 37vw;
+    margin: 0% 2%;
+    padding: 3%;
   }
   .info h5{
     font-size: 30px;
@@ -348,10 +376,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   .info p{
     font-size: 18px;
     line-height: initial;
-  }
-
-  #cvBtn{
-    display: inline;
+    margin: 1rem 2rem;
   }
 
   .tile
