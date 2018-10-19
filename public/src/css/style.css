@@ -2,6 +2,23 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.me{
+  padding: 10%
+}
+
+.proyectos {
+  padding-left: 6%;
+}
+
+.tituloProyecto {
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  color: #000000;
+  font-weight: 900;
+  text-align: center;
+  margin: 3% 0%;
+}
+
 canvas  {
   position: absolute;
   width: 100%;
@@ -359,7 +376,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     padding: 20px;
   }
   .snip1581 {
-    height: 82vh;
+    height: 79vh;
   }
   .card-body{
     padding: 4.25rem;
@@ -376,10 +393,11 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     display: inline-block;
     margin: 0%;
     text-align: center;
+    height: 79vh;
   }
   .tech{
     display: block;
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .photo{
     box-sizing: border-box;
@@ -408,8 +426,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
   .tile
   {
-    height: 50vh;
-    margin: 0% 0% 0% 8%;
+    margin: 0%;
   }
 
   .tile img {
@@ -419,16 +436,23 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   #menuContainer{
     top: 60%;
   }
-  
+  .me {
+    padding: 5%;
 }
+}
+
 
 @media screen and (min-width: 750px) and (max-width: 1024px) {
   #cvBtn{
     margin-top: 6%;
   }
   #section2 img {
-    height: auto;
+    height: 74vh;
   }
+  .skills .fab {
+    font-size: 30px;
+    margin-top: 10%;
+}
   .skills h2 {
     color: #333333;
     font-family: 'Amatic SC', cursive;
@@ -464,6 +488,8 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     box-sizing: border-box;
     display: inline-block;
     width: 43vw;
+    margin: 0% 2% 0% 6%;
+    padding: 0%;
   }
   .info{
     text-align: justify;
@@ -471,7 +497,6 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     width: 46vw;
     margin: 0%;
     padding: 2%;
-    height: 90vh;
   }
   .info h2{
     font-size: 30px;
@@ -498,4 +523,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   #menuContainer{
     top: 60%;
   }
+  .me {
+    padding: 6%;
+}
 }
