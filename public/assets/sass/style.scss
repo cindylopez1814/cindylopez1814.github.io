@@ -286,7 +286,7 @@ $particle-max-delay: 12000; // ms
     height: $particle-size;
     background-color:rgba(white ,0.5);
     border-radius:50%;
-    
+  
     // Randomize bubles
     @for $i from 1 through $particle-count{
       
@@ -324,10 +324,13 @@ $particle-max-delay: 12000; // ms
   .scrollspy-wrapper .table-of-contents{
     width: 7vw;
   }
+  #section5{
+    height: 52vh;
+  }  
 } 
 
 @media screen and (min-width: 1000px) {
   .scrollspy-wrapper .table-of-contents{
-    width: 5vW;
+    width: 5vw;
   }
 }

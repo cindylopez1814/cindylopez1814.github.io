@@ -6,3 +6,12 @@ $('.svg-wrapper').hover(
     $(this).removeClass('in').addClass('out');
   }
 );
+
+const button = document.querySelector(".hover-button");
+button.addEventListener("mouseup", function() {
+  button.blur();
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});

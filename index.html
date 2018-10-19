@@ -15,12 +15,13 @@
   <link rel="stylesheet" href="./public/assets/css/bootstrap.min.css">
   <!-- Library -->
   <link rel="stylesheet" href="./public/assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Style -->
   <link rel="stylesheet" href="./public/src/css/style.css">
 </head>
 
 <body>
-  <div class="scrollspy-wrapper">
+  <div class="scrollspy-wrapper" id="pagepiling">
     <div class="main-content">
 
       <!-- BUTTON NAV -->
@@ -81,7 +82,7 @@
       <!-- ABOUT ME -->
       <div id="section2" class="section">
         <div class="row me">
-          <div class="photo col-md-4">
+          <div class="photo col-md-4" data-aos="fade-down">
             <figure class="snip1581">
               <img src="./public/assets/img/foto.jpg" alt="profile-sample2" />
               <figcaption>
@@ -91,7 +92,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="info col-md-5">
+          <div class="info col-md-5" data-aos="fade-up">
             <h2 class="saludo">
               Hola! Soy Cindy
             </h2>
@@ -141,7 +142,7 @@
               </div>
             </div>
           </div>
-          <div class="skills col-md-2">
+          <div class="skills col-md-2" data-aos="fade-down">
             <h2>SKILLS</h2>
             <div class="tech">
               <i class="fab fa-js"></i>
@@ -173,302 +174,317 @@
 
       <!-- WORKS -->
       <div id="section4" class="section">
-        <h2 class="tituloProyecto">Proyectos</h2>
+        <h1 class="tituloProyecto">Proyectos</h1>
         <div class="row proyectos">
-          <figure class="snip1477 col-md-6 col-12 col-lg-3">
+          <figure class="snip1477 col-md-6 col-12 col-lg-3" data-aos="zoom-in-up">
             <img src="./public/assets/img/conetapp.png" alt="sample38" />
             <div class="title">
               <div>
-                <h2>ConectApp</h2>
-                <h4>Red Social Escolar</h4>
+                <h4>ConectApp</h4>
               </div>
             </div>
             <figcaption>
-              <a target="_blank" href="https://super-women-app.firebaseapp.com/">
-                <button class="dots btn">Demo
+              <a target="_blank" href="https://social-network-d7373.firebaseapp.com/">
+                <button class="btn hover-button">Demo
                   <i class="fab fa-js"></i>
                 </button>
               </a>
-              <a target="_blank" href="https://super-women-app.firebaseapp.com/">
-                <button class="dots btn">Demo
+              <a target="_blank" href="https://redframework-1e62f.firebaseapp.com/">
+                <button class="btn hover-button">Demo
                   <i class="fab fa-angular"></i>
                 </button>
               </a>
-              <a target="_blank" href="https://super-women-app.firebaseapp.com/">
-                <button class="dots btn">Código
+              <a target="_blank" href="https://github.com/cindylopez1814/scl-2018-05-bc-core-am-socialnetwork/">
+                <button class="btn hover-button">Código
                   <i class="fab fa-js"></i>
                 </button>
               </a>
-              <a target="_blank" href="https://super-women-app.firebaseapp.com/">
-                <button class="dots btn">Código
+              <a target="_blank" href="https://github.com/cindylopez1814/social-network-angular">
+                <button class="btn hover-button">Código
                   <i class="fab fa-angular"></i>
                 </button>
               </a>
             </figcaption>
           </figure>
 
-          <figure class="snip1477 col-md-6 col-12 col-lg-3">
+          <figure class="snip1477 col-md-6 col-12 col-lg-3" data-aos="zoom-in-up">
             <img src="./public/assets/img/registro-if.png" alt="sample35" />
             <div class="title">
               <div>
-                <h2>IF</h2>
-                <h4>Registro de visitantes</h4>
+                <h4>IF</h2>
               </div>
             </div>
             <figcaption>
-              <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+              <a target="_blank" href="https://registro-visitantes.firebaseapp.com/">
+                <button class="btn hover-button">Demo
+                </button>
+              </a>
+              <a target="_blank" href="https://github.com/cindylopez1814/scl-2018-01-ProyectoFinalCore">
+                <button class="btn hover-button">Código
+                </button>
+              </a>
             </figcaption>
-            <a href="#"></a>
           </figure>
 
-          <figure class="snip1477 col-md-6 col-12 col-lg-3">
+          <figure class="snip1477 col-md-6 col-12 col-lg-3" data-aos="zoom-in-up">
             <img src="./public/assets/img/food-map.png" alt="sample38" />
             <div class="title">
               <div>
-                <h2>FoodMap</h2>
-                <h4>Buscador de comercio</h4>
+                <h4>FoodMap</h4>
               </div>
             </div>
             <figcaption>
-              <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+              <a target="_blank" href="https://cindylopez1814.github.io/food-map/">
+                <button class="btn" hover-button>Demo
+                </button>
+              </a>
+              <a target="_blank" href="https://github.com/cindylopez1814/food-map">
+                <button class="btn hover-button">Código
+                </button>
+              </a>
             </figcaption>
-            <a href="#"></a>
           </figure>
 
-          <figure class="snip1477 col-md-6 col-12 col-lg-3">
-              <img src="./public/assets/img/unnamed.jpg" alt="sample35" />
-              <div class="title">
-                <div>
-                  <h2>IF</h2>
-                  <h4>Registro de visitantes</h4>
-                </div>
+          <figure class="snip1477 col-md-6 col-12 col-lg-3" data-aos="zoom-in-up">
+            <img src="./public/assets/img/unnamed.jpg" alt="sample35" />
+            <div class="title">
+              <div>
+                <h4>SororidApp</h4>
               </div>
-              <figcaption>
-                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-              </figcaption>
-              <a href="#"></a>
-            </figure>
+            </div>
+            <figcaption>
+                <a target="_blank" href="https://super-women-app.firebaseapp.com/">
+                  <button class="btn hover-button">Demo
+                  </button>
+                </a>
+                <a target="_blank" href="https://github.com/cindylopez1814/super-woman-app">
+                  <button class="btn hover-button">Código
+                  </button>
+                </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- CONTAC -->
+        <div id="section5" class="section">
+          <div class="content">
+          <h1>CONTACTO</h1>
+            <p>Para seguir conociendo mi trabajo</p>
+            <a target="_blank" href="https://www.linkedin.com/in/cindy-l%C3%B3pez-oportus/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:cindy.lopezoportus@gmail.com" data-toggle="tooltip" data-placement="bottom" title="cindy.lopezoportus@gmail.com">
+              <i class="far fa-envelope fab"></i>
+            </a>
+            <a target="_blank" href="https://github.com/cindylopez1814">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="bottom-particles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+          </div>
         </div>
       </div>
 
-
-      <!-- CONTAC -->
-      <div id="section5" class="section">
-        <h1 class="content">
-          <p>Contáctame</p>
-          <a target="_blank" href="https://www.linkedin.com/in/cindy-l%C3%B3pez-oportus/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:cindy.lopezoportus@gmail.com" data-toggle="tooltip" data-placement="bottom" title="cindy.lopezoportus@gmail.com">
-            <i class="far fa-envelope"></i>
-          </a>
-          <a target="_blank" href="https://github.com/cindylopez1814">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </h1>
-        <div class="bottom-particles">
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -484,8 +500,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   <script src="./public/assets/js/scroll.js"></script>
   <script src="./public/assets/js/circle.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Main -->
   <script src="./public/src/js/app.js"></script>
+
+  <script>
+      AOS.init();
+  </script>
 </body>
 
 </html>
