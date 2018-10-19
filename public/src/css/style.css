@@ -550,6 +550,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     font-size: 18px;
     margin: 2%;
   }
+  #section2 .containerButton {
+    width: 100%;
+  }
 }
 
 
@@ -680,6 +683,144 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     max-width: 400px;
   }
   .proyectos {
-    padding: 0% 0% 0% 2%;
+    padding: 0%;
+    margin-left: 5%;
   }  
+  .info .tools {
+    display: none;
+  }
+  .skills {
+    display: inline-block;
+    margin: 0%;
+    text-align: center;
+    height: 79vh;
+}
+.skills h2 {
+  color: #333333;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 900;
+  font-size: 60px;
+}
+  .skills .fab {
+    font-size: 65px;
+    margin-top: 0%;
+  }
+  .tech {
+    display: block;
+    margin-top: 8%;
+}
+#section2 .containerButton {
+  width: 100%;
+}
+#section5 p{
+  font-size: 25px;
+}
+
+#section2 img {
+  height: auto;
+}
+#section5{
+  height: 79vh;
+  text-align: center;
+}  
+
+.snip1581 h3 {
+  font-size: 44px;
+  font-weight: 400;
+}  
+.snip1581 figcaption {
+  padding: 20px;
+}
+h1{
+  font-size: 60px;
+}
+.snip1581 {
+  height: 79vh;
+}
+#section5 i {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  margin-top: 5%;
+}
+.card-body{
+  padding: 4.25rem;
+  margin: 0%;
+}
+.portrait,
+#section .portrait{
+  height: 45vh;
+}
+.info .tools {
+  display: none;
+}
+.skills {
+  display: inline-block;
+  margin: 0%;
+  text-align: center;
+  height: 79vh;
+}
+.tech{
+  display: block;
+  margin-top: 8%;
+}
+.photo{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30vw;
+  margin-left: 2%;
+}
+.info{
+  text-align: justify;
+  display: inline-block;
+  width: 37vw;
+  margin: 0%;
+  padding: 2%;
+}
+.info h2{
+  font-size: 55px;
+}
+.info p{
+  font-size: 33px;
+  line-height: initial;
+  margin: 1rem 3rem;
+}
+.info a{
+font-size: 35px;
+padding: 4%;
+}
+.tile
+{
+  margin: 0%;
+}
+
+.scrollspy-wrapper .table-of-contents i {
+  font-size: 35px;
+}
+
+.tituloProyecto {
+  font-size: 60px;
+}
+.tile img {
+  padding: 0%;
+}
+
+#menuContainer{
+  top: 60%;
+}
+.me {
+  padding: 5%;
+}
+.btn{
+  cursor: pointer;
+  width: 7vw;
+  color: white;
+  font-size: 25px;
+  margin: 2%;
+}
+.btn i{
+  font-size: 20px;
+}
 }
