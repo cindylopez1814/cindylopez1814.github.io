@@ -4,9 +4,9 @@ import HeroIllustration from './HeroIllustration.vue'
 
 const { t } = useLang()
 
-function scrollToWork() {
-  document.querySelector('#work')?.scrollIntoView({ behavior: 'smooth' })
-}
+//function scrollToWork() {
+//document.querySelector('#work')?.scrollIntoView({ behavior: 'smooth' })
+//}
 </script>
 
 <template>

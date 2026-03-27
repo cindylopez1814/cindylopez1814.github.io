@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { useLang } from '../composables/useLang'
-import banchileSvg from '../assets/logos/Logo-Banchile.svg?raw'
-import bancEstadoSvg from '../assets/logos/banco_estado logo.svg?raw'
-import bciSvg from '../assets/logos/bci logo.svg?raw'
 import lirmiImg from '../assets/IMG/opt/lirmi.jpg'
 import cartolaImg from '../assets/IMG/opt/cartola.jpg'
 import islaNativaImg from '../assets/IMG/opt/isla-nativa.jpg'
