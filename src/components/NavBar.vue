@@ -66,7 +66,7 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
       </div>
 
       <!-- ── Right side ── -->
-      <div class="flex m-4" style="width: 70%">
+      <div class="flex m-4" style="width: 100%">
         <!-- Nav links (visible ≥ 560 px) -->
         <div class="gap-1 inline-flex items-center justify-center" style="width: 100%">
           <button

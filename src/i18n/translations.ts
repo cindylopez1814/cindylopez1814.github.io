@@ -11,7 +11,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'li-sub': 'Ver perfil completo →',
     'cv-label': 'Descargar CV',
     // Hero
-    'hero-eyebrow': 'Product Designer · Remote · Brasil 🌿',
+    'hero-eyebrow': 'Product Designer · Remote 🌿',
     'hero-title-1': 'Transformo problemas',
     'hero-title-2': 'complejos en productos',
     'hero-title-3': 'claros y escalables.',
@@ -97,7 +97,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-back': 'Volver',
     'lirmi-case-num': 'Caso 01',
     'lirmi-subtitle': 'Conectando a las familias con la educación',
-    'lirmi-brief': 'Rediseño de la experiencia de una app móvil de gestión escolar para aumentar la adopción entre apoderados, reducir la brecha digital y habilitar la comunicación bidireccional con el colegio.',
+    'lirmi-brief':
+      'Rediseño de la experiencia de una app móvil de gestión escolar para aumentar la adopción entre apoderados, reducir la brecha digital y habilitar la comunicación bidireccional con el colegio.',
     'lirmi-meta-role': 'Rol',
     'lirmi-meta-year': 'Año',
     'lirmi-meta-platform': 'Plataforma',
@@ -115,39 +116,57 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-sec-7': 'Artefactos UX',
     'lirmi-sec-8': 'Aprendizajes',
     'lirmi-ctx-t1': 'El producto',
-    'lirmi-ctx-p1a': '<strong>Lirmi</strong> es una plataforma de gestión escolar para profesores, estudiantes y apoderados. Permite acceder a servicios como biblioteca educativa, planificaciones, evaluaciones, rúbricas, curriculum, convivencia escolar, emisión de certificados y contacto con apoderados.',
-    'lirmi-ctx-p1b': '<strong>Lirmi Familia</strong> es la aplicación móvil de comunicación instantánea entre el colegio y los apoderados, lanzada al mercado en 2020.',
+    'lirmi-ctx-p1a':
+      '<strong>Lirmi</strong> es una plataforma de gestión escolar para profesores, estudiantes y apoderados. Permite acceder a servicios como biblioteca educativa, planificaciones, evaluaciones, rúbricas, curriculum, convivencia escolar, emisión de certificados y contacto con apoderados.',
+    'lirmi-ctx-p1b':
+      '<strong>Lirmi Familia</strong> es la aplicación móvil de comunicación instantánea entre el colegio y los apoderados, lanzada al mercado en 2020.',
     'lirmi-ctx-t2': 'El desafío inicial',
-    'lirmi-ctx-p2a': 'A pesar de su exitoso despliegue en establecimientos públicos y privados, la adopción de Lirmi Familia era baja. Los apoderados seguían recurriendo a métodos tradicionales para resolver tareas que la app debería cubrir.',
-    'lirmi-ctx-p2b': 'El equipo necesitaba entender <strong>por qué los usuarios no usaban la app</strong> y qué cambios de diseño aumentarían su adopción real.',
-    'lirmi-problem-quote': 'Los apoderados no utilizan Lirmi Familia con frecuencia y recurren al papel a pesar de tener acceso a herramientas digitales.',
+    'lirmi-ctx-p2a':
+      'A pesar de su exitoso despliegue en establecimientos públicos y privados, la adopción de Lirmi Familia era baja. Los apoderados seguían recurriendo a métodos tradicionales para resolver tareas que la app debería cubrir.',
+    'lirmi-ctx-p2b':
+      'El equipo necesitaba entender <strong>por qué los usuarios no usaban la app</strong> y qué cambios de diseño aumentarían su adopción real.',
+    'lirmi-problem-quote':
+      'Los apoderados no utilizan Lirmi Familia con frecuencia y recurren al papel a pesar de tener acceso a herramientas digitales.',
     'lirmi-problem-intro': 'Tres factores críticos se identificaron como causas del problema:',
     'lirmi-factor-1-title': 'Brecha digital',
-    'lirmi-factor-1-body': 'Apoderados mayores no se familiarizan con las funcionalidades. No comprenden el producto ni las posibilidades que ofrece.',
+    'lirmi-factor-1-body':
+      'Apoderados mayores no se familiarizan con las funcionalidades. No comprenden el producto ni las posibilidades que ofrece.',
     'lirmi-factor-2-title': 'Comunicación unidireccional',
-    'lirmi-factor-2-body': 'Los usuarios reciben información pero no pueden responder ni contactar directamente a profesores o autoridades. Esto genera frustración activa.',
+    'lirmi-factor-2-body':
+      'Los usuarios reciben información pero no pueden responder ni contactar directamente a profesores o autoridades. Esto genera frustración activa.',
     'lirmi-factor-3-title': 'Subutilización del producto',
-    'lirmi-factor-3-body': 'La adopción lenta resulta en una herramienta infrautilizada, afectando el retorno de inversión del colegio y la comunicación con las familias.',
+    'lirmi-factor-3-body':
+      'La adopción lenta resulta en una herramienta infrautilizada, afectando el retorno de inversión del colegio y la comunicación con las familias.',
     'lirmi-research-t': 'Metodología de',
     'lirmi-research-em': 'investigación',
-    'lirmi-research-intro': 'Combinar métodos cualitativos y cuantitativos permitió entender tanto las motivaciones profundas como el alcance de los problemas identificados.',
+    'lirmi-research-intro':
+      'Combinar métodos cualitativos y cuantitativos permitió entender tanto las motivaciones profundas como el alcance de los problemas identificados.',
     'lirmi-tech-0-title': 'Entrevistas',
-    'lirmi-tech-0-desc': 'Sesiones 1:1 con apoderados para explorar motivaciones, barreras y contexto de uso.',
+    'lirmi-tech-0-desc':
+      'Sesiones 1:1 con apoderados para explorar motivaciones, barreras y contexto de uso.',
     'lirmi-tech-1-title': 'Journey Map',
-    'lirmi-tech-1-desc': 'Mapeo del recorrido emocional del usuario desde notificación hasta resolución de tarea.',
+    'lirmi-tech-1-desc':
+      'Mapeo del recorrido emocional del usuario desde notificación hasta resolución de tarea.',
     'lirmi-tech-2-title': 'Prueba de usabilidad',
-    'lirmi-tech-2-desc': 'Testing moderado con tareas reales sobre la app actual para identificar fricciones clave.',
+    'lirmi-tech-2-desc':
+      'Testing moderado con tareas reales sobre la app actual para identificar fricciones clave.',
     'lirmi-tech-3-title': 'Encuestas',
-    'lirmi-tech-3-desc': 'Cuestionario cuantitativo para validar hipótesis y dimensionar problemas encontrados.',
+    'lirmi-tech-3-desc':
+      'Cuestionario cuantitativo para validar hipótesis y dimensionar problemas encontrados.',
     'lirmi-hyp-eyebrow1': 'Hipótesis de investigación',
-    'lirmi-hyp-quote': 'Lirmi Familia no satisface todas las necesidades de los apoderados, por lo que dejan de usarla y recurren a métodos tradicionales para llevar a cabo ciertas tareas.',
+    'lirmi-hyp-quote':
+      'Lirmi Familia no satisface todas las necesidades de los apoderados, por lo que dejan de usarla y recurren a métodos tradicionales para llevar a cabo ciertas tareas.',
     'lirmi-hyp-eyebrow2': 'Preguntas de investigación',
-    'lirmi-q1': '¿Cuáles son las principales necesidades y expectativas que los usuarios tienen de una aplicación de gestión escolar?',
-    'lirmi-q2': '¿Cómo afecta el nivel de experiencia digital de los apoderados en su adopción y uso de Lirmi Familia?',
+    'lirmi-q1':
+      '¿Cuáles son las principales necesidades y expectativas que los usuarios tienen de una aplicación de gestión escolar?',
+    'lirmi-q2':
+      '¿Cómo afecta el nivel de experiencia digital de los apoderados en su adopción y uso de Lirmi Familia?',
     'lirmi-user-t': 'Padres y tutores',
     'lirmi-user-em': 'comprometidos con la educación',
-    'lirmi-user-p1': 'El público objetivo son padres y tutores de entre <strong>18 y 50 años</strong> cuyos hijos asisten a establecimientos educacionales que utilizan Lirmi en Santiago de Chile.',
-    'lirmi-user-p2': 'Personas comprometidas con la educación y el bienestar de sus hijos, que pueden enfrentar desafíos al adoptar y utilizar aplicaciones digitales.',
+    'lirmi-user-p1':
+      'El público objetivo son padres y tutores de entre <strong>18 y 50 años</strong> cuyos hijos asisten a establecimientos educacionales que utilizan Lirmi en Santiago de Chile.',
+    'lirmi-user-p2':
+      'Personas comprometidas con la educación y el bienestar de sus hijos, que pueden enfrentar desafíos al adoptar y utilizar aplicaciones digitales.',
     'lirmi-attr-1-title': 'Nivel digital variable',
     'lirmi-attr-1-body': 'Desde nativos digitales hasta usuarios con poca experiencia en apps',
     'lirmi-attr-2-title': 'Contexto educacional activo',
@@ -159,30 +178,41 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-findings-t': 'Lo que el research',
     'lirmi-findings-em': 'reveló',
     'lirmi-ins-0-title': 'Brecha digital como barrera de adopción',
-    'lirmi-ins-0-body': 'Apoderados mayores de 40 años reportaron no entender las funcionalidades del producto. La familiaridad con apps digitales influye directamente en la frecuencia de uso.',
+    'lirmi-ins-0-body':
+      'Apoderados mayores de 40 años reportaron no entender las funcionalidades del producto. La familiaridad con apps digitales influye directamente en la frecuencia de uso.',
     'lirmi-ins-1-title': 'Comunicación unidireccional frustra al usuario',
-    'lirmi-ins-1-body': 'Los apoderados reciben información pero no pueden responder ni iniciar conversaciones. Esta limitación genera frustración y abandono de la app en favor del papel.',
+    'lirmi-ins-1-body':
+      'Los apoderados reciben información pero no pueden responder ni iniciar conversaciones. Esta limitación genera frustración y abandono de la app en favor del papel.',
     'lirmi-ins-2-title': 'El papel sigue siendo el canal de confianza',
-    'lirmi-ins-2-body': 'Tareas como autorizaciones, permisos y consultas se siguen haciendo presencialmente. La herramienta digital no está cubriendo estas necesidades críticas.',
+    'lirmi-ins-2-body':
+      'Tareas como autorizaciones, permisos y consultas se siguen haciendo presencialmente. La herramienta digital no está cubriendo estas necesidades críticas.',
     'lirmi-ins-3-title': 'Bajo conocimiento del producto disponible',
-    'lirmi-ins-3-body': 'Usuarios desconocían funciones clave de la app. La falta de onboarding y descubribilidad contribuye directamente a la subutilización de la plataforma.',
+    'lirmi-ins-3-body':
+      'Usuarios desconocían funciones clave de la app. La falta de onboarding y descubribilidad contribuye directamente a la subutilización de la plataforma.',
     'lirmi-artifacts-t': 'Herramientas que',
     'lirmi-artifacts-em': 'guiaron el diseño',
-    'lirmi-artifacts-intro': 'Los artefactos de investigación sintetizaron los hallazgos y sirvieron como base para definir los criterios de rediseño.',
+    'lirmi-artifacts-intro':
+      'Los artefactos de investigación sintetizaron los hallazgos y sirvieron como base para definir los criterios de rediseño.',
     'lirmi-artifact-1-tag': 'User Persona',
-    'lirmi-artifact-1-desc': 'Representación del usuario primario con sus motivaciones, frustraciones y comportamientos digitales.',
+    'lirmi-artifact-1-desc':
+      'Representación del usuario primario con sus motivaciones, frustraciones y comportamientos digitales.',
     'lirmi-artifact-2-tag': 'Mapa de Empatía',
-    'lirmi-artifact-2-desc': 'Qué piensa, siente, dice y hace el apoderado al interactuar con la aplicación.',
+    'lirmi-artifact-2-desc':
+      'Qué piensa, siente, dice y hace el apoderado al interactuar con la aplicación.',
     'lirmi-artifact-3-tag': 'Journey Map',
-    'lirmi-artifact-3-desc': 'Recorrido emocional del usuario desde la notificación recibida hasta completar (o abandonar) una tarea en la app.',
+    'lirmi-artifact-3-desc':
+      'Recorrido emocional del usuario desde la notificación recibida hasta completar (o abandonar) una tarea en la app.',
     'lirmi-learnings-t': 'Lo que me llevé',
     'lirmi-learnings-em': 'de este proyecto',
     'lirmi-learn-0-title': 'La adopción es un problema de comportamiento, no solo de UI',
-    'lirmi-learn-0-body': 'Mejorar la interfaz no basta. Las barreras de adopción en usuarios con baja alfabetización digital requieren estrategias de onboarding, educación y acompañamiento.',
+    'lirmi-learn-0-body':
+      'Mejorar la interfaz no basta. Las barreras de adopción en usuarios con baja alfabetización digital requieren estrategias de onboarding, educación y acompañamiento.',
     'lirmi-learn-1-title': 'La comunicación bidireccional es innegociable',
-    'lirmi-learn-1-body': 'Para que un producto de gestión escolar sea adoptado, los usuarios necesitan sentir que tienen agencia. La capacidad de responder e iniciar contacto es un diferenciador crítico.',
+    'lirmi-learn-1-body':
+      'Para que un producto de gestión escolar sea adoptado, los usuarios necesitan sentir que tienen agencia. La capacidad de responder e iniciar contacto es un diferenciador crítico.',
     'lirmi-learn-2-title': 'El research temprano evita diseñar soluciones incorrectas',
-    'lirmi-learn-2-body': 'Sin entrevistas y pruebas de usabilidad, el equipo habría iterado sobre UI sin atacar el problema real. Validar la hipótesis antes de diseñar ahorró tiempo y recursos significativos.',
+    'lirmi-learn-2-body':
+      'Sin entrevistas y pruebas de usabilidad, el equipo habría iterado sobre UI sin atacar el problema real. Validar la hipótesis antes de diseñar ahorró tiempo y recursos significativos.',
     'lirmi-next-label': 'Siguiente proyecto',
     'lirmi-next-title1': 'Cartola de',
     'lirmi-next-title2': 'Inversión',
@@ -278,7 +308,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-back': 'Voltar',
     'lirmi-case-num': 'Caso 01',
     'lirmi-subtitle': 'Conectando famílias com a educação',
-    'lirmi-brief': 'Redesign da experiência de um app móvel de gestão escolar para aumentar a adoção entre responsáveis, reduzir a brecha digital e habilitar a comunicação bidirecional com a escola.',
+    'lirmi-brief':
+      'Redesign da experiência de um app móvel de gestão escolar para aumentar a adoção entre responsáveis, reduzir a brecha digital e habilitar a comunicação bidirecional com a escola.',
     'lirmi-meta-role': 'Função',
     'lirmi-meta-year': 'Ano',
     'lirmi-meta-platform': 'Plataforma',
@@ -296,39 +327,57 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-sec-7': 'Artefatos UX',
     'lirmi-sec-8': 'Aprendizados',
     'lirmi-ctx-t1': 'O produto',
-    'lirmi-ctx-p1a': '<strong>Lirmi</strong> é uma plataforma de gestão escolar para professores, estudantes e responsáveis. Permite acessar serviços como biblioteca educacional, planejamentos, avaliações, rubricas, currículo, convivência escolar, emissão de certificados e contato com responsáveis.',
-    'lirmi-ctx-p1b': '<strong>Lirmi Família</strong> é o aplicativo móvel de comunicação instantânea entre a escola e os responsáveis, lançado em 2020.',
+    'lirmi-ctx-p1a':
+      '<strong>Lirmi</strong> é uma plataforma de gestão escolar para professores, estudantes e responsáveis. Permite acessar serviços como biblioteca educacional, planejamentos, avaliações, rubricas, currículo, convivência escolar, emissão de certificados e contato com responsáveis.',
+    'lirmi-ctx-p1b':
+      '<strong>Lirmi Família</strong> é o aplicativo móvel de comunicação instantânea entre a escola e os responsáveis, lançado em 2020.',
     'lirmi-ctx-t2': 'O desafio inicial',
-    'lirmi-ctx-p2a': 'Apesar do seu exitoso desdobramento em estabelecimentos públicos e privados, a adoção do Lirmi Família era baixa. Os responsáveis continuavam recorrendo a métodos tradicionais para resolver tarefas que o app deveria cobrir.',
-    'lirmi-ctx-p2b': 'A equipe precisava entender <strong>por que os usuários não usavam o app</strong> e que mudanças de design aumentariam sua adoção real.',
-    'lirmi-problem-quote': 'Os responsáveis não utilizam o Lirmi Família com frequência e recorrem ao papel apesar de ter acesso a ferramentas digitais.',
+    'lirmi-ctx-p2a':
+      'Apesar do seu exitoso desdobramento em estabelecimentos públicos e privados, a adoção do Lirmi Família era baixa. Os responsáveis continuavam recorrendo a métodos tradicionais para resolver tarefas que o app deveria cobrir.',
+    'lirmi-ctx-p2b':
+      'A equipe precisava entender <strong>por que os usuários não usavam o app</strong> e que mudanças de design aumentariam sua adoção real.',
+    'lirmi-problem-quote':
+      'Os responsáveis não utilizam o Lirmi Família com frequência e recorrem ao papel apesar de ter acesso a ferramentas digitais.',
     'lirmi-problem-intro': 'Três fatores críticos foram identificados como causas do problema:',
     'lirmi-factor-1-title': 'Brecha digital',
-    'lirmi-factor-1-body': 'Responsáveis mais velhos não se familiarizam com as funcionalidades. Não compreendem o produto nem as possibilidades que ele oferece.',
+    'lirmi-factor-1-body':
+      'Responsáveis mais velhos não se familiarizam com as funcionalidades. Não compreendem o produto nem as possibilidades que ele oferece.',
     'lirmi-factor-2-title': 'Comunicação unidirecional',
-    'lirmi-factor-2-body': 'Os usuários recebem informações mas não podem responder nem contatar diretamente professores ou autoridades. Isso gera frustração ativa.',
+    'lirmi-factor-2-body':
+      'Os usuários recebem informações mas não podem responder nem contatar diretamente professores ou autoridades. Isso gera frustração ativa.',
     'lirmi-factor-3-title': 'Subutilização do produto',
-    'lirmi-factor-3-body': 'A adoção lenta resulta em uma ferramenta subutilizada, afetando o retorno de investimento da escola e a comunicação com as famílias.',
+    'lirmi-factor-3-body':
+      'A adoção lenta resulta em uma ferramenta subutilizada, afetando o retorno de investimento da escola e a comunicação com as famílias.',
     'lirmi-research-t': 'Metodologia de',
     'lirmi-research-em': 'investigação',
-    'lirmi-research-intro': 'Combinar métodos qualitativos e quantitativos permitiu entender tanto as motivações profundas quanto a extensão dos problemas identificados.',
+    'lirmi-research-intro':
+      'Combinar métodos qualitativos e quantitativos permitiu entender tanto as motivações profundas quanto a extensão dos problemas identificados.',
     'lirmi-tech-0-title': 'Entrevistas',
-    'lirmi-tech-0-desc': 'Sessões 1:1 com responsáveis para explorar motivações, barreiras e contexto de uso.',
+    'lirmi-tech-0-desc':
+      'Sessões 1:1 com responsáveis para explorar motivações, barreiras e contexto de uso.',
     'lirmi-tech-1-title': 'Journey Map',
-    'lirmi-tech-1-desc': 'Mapeamento da jornada emocional do usuário desde a notificação até a resolução da tarefa.',
+    'lirmi-tech-1-desc':
+      'Mapeamento da jornada emocional do usuário desde a notificação até a resolução da tarefa.',
     'lirmi-tech-2-title': 'Teste de usabilidade',
-    'lirmi-tech-2-desc': 'Testing moderado com tarefas reais sobre o app atual para identificar fricções-chave.',
+    'lirmi-tech-2-desc':
+      'Testing moderado com tarefas reais sobre o app atual para identificar fricções-chave.',
     'lirmi-tech-3-title': 'Pesquisas',
-    'lirmi-tech-3-desc': 'Questionário quantitativo para validar hipóteses e dimensionar os problemas encontrados.',
+    'lirmi-tech-3-desc':
+      'Questionário quantitativo para validar hipóteses e dimensionar os problemas encontrados.',
     'lirmi-hyp-eyebrow1': 'Hipótese de pesquisa',
-    'lirmi-hyp-quote': 'Lirmi Família não satisfaz todas as necessidades dos responsáveis, por isso deixam de usá-lo e recorrem a métodos tradicionais para realizar certas tarefas.',
+    'lirmi-hyp-quote':
+      'Lirmi Família não satisfaz todas as necessidades dos responsáveis, por isso deixam de usá-lo e recorrem a métodos tradicionais para realizar certas tarefas.',
     'lirmi-hyp-eyebrow2': 'Perguntas de pesquisa',
-    'lirmi-q1': 'Quais são as principais necessidades e expectativas que os usuários têm de um aplicativo de gestão escolar?',
-    'lirmi-q2': 'Como o nível de experiência digital dos responsáveis afeta sua adoção e uso do Lirmi Família?',
+    'lirmi-q1':
+      'Quais são as principais necessidades e expectativas que os usuários têm de um aplicativo de gestão escolar?',
+    'lirmi-q2':
+      'Como o nível de experiência digital dos responsáveis afeta sua adoção e uso do Lirmi Família?',
     'lirmi-user-t': 'Pais e tutores',
     'lirmi-user-em': 'comprometidos com a educação',
-    'lirmi-user-p1': 'O público-alvo são pais e tutores entre <strong>18 e 50 anos</strong> cujos filhos frequentam estabelecimentos educacionais que utilizam o Lirmi em Santiago do Chile.',
-    'lirmi-user-p2': 'Pessoas comprometidas com a educação e o bem-estar de seus filhos, que podem enfrentar desafios ao adotar e utilizar aplicativos digitais.',
+    'lirmi-user-p1':
+      'O público-alvo são pais e tutores entre <strong>18 e 50 anos</strong> cujos filhos frequentam estabelecimentos educacionais que utilizam o Lirmi em Santiago do Chile.',
+    'lirmi-user-p2':
+      'Pessoas comprometidas com a educação e o bem-estar de seus filhos, que podem enfrentar desafios ao adotar e utilizar aplicativos digitais.',
     'lirmi-attr-1-title': 'Nível digital variável',
     'lirmi-attr-1-body': 'De nativos digitais a usuários com pouca experiência em apps',
     'lirmi-attr-2-title': 'Contexto educacional ativo',
@@ -340,30 +389,41 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-findings-t': 'O que o research',
     'lirmi-findings-em': 'revelou',
     'lirmi-ins-0-title': 'Brecha digital como barreira de adoção',
-    'lirmi-ins-0-body': 'Responsáveis com mais de 40 anos relataram não entender as funcionalidades do produto. A familiaridade com apps digitais influencia diretamente a frequência de uso.',
+    'lirmi-ins-0-body':
+      'Responsáveis com mais de 40 anos relataram não entender as funcionalidades do produto. A familiaridade com apps digitais influencia diretamente a frequência de uso.',
     'lirmi-ins-1-title': 'Comunicação unidirecional frustra o usuário',
-    'lirmi-ins-1-body': 'Os responsáveis recebem informações mas não podem responder nem iniciar conversas. Essa limitação gera frustração e abandono do app em favor do papel.',
+    'lirmi-ins-1-body':
+      'Os responsáveis recebem informações mas não podem responder nem iniciar conversas. Essa limitação gera frustração e abandono do app em favor do papel.',
     'lirmi-ins-2-title': 'O papel continua sendo o canal de confiança',
-    'lirmi-ins-2-body': 'Tarefas como autorizações, permissões e consultas continuam sendo feitas presencialmente. A ferramenta digital não está cobrindo essas necessidades críticas.',
+    'lirmi-ins-2-body':
+      'Tarefas como autorizações, permissões e consultas continuam sendo feitas presencialmente. A ferramenta digital não está cobrindo essas necessidades críticas.',
     'lirmi-ins-3-title': 'Baixo conhecimento do produto disponível',
-    'lirmi-ins-3-body': 'Usuários desconheciam funções-chave do app. A falta de onboarding e descobribilidade contribui diretamente para a subutilização da plataforma.',
+    'lirmi-ins-3-body':
+      'Usuários desconheciam funções-chave do app. A falta de onboarding e descobribilidade contribui diretamente para a subutilização da plataforma.',
     'lirmi-artifacts-t': 'Ferramentas que',
     'lirmi-artifacts-em': 'guiaram o design',
-    'lirmi-artifacts-intro': 'Os artefatos de pesquisa sintetizaram as descobertas e serviram como base para definir os critérios de redesign.',
+    'lirmi-artifacts-intro':
+      'Os artefatos de pesquisa sintetizaram as descobertas e serviram como base para definir os critérios de redesign.',
     'lirmi-artifact-1-tag': 'User Persona',
-    'lirmi-artifact-1-desc': 'Representação do usuário primário com suas motivações, frustrações e comportamentos digitais.',
+    'lirmi-artifact-1-desc':
+      'Representação do usuário primário com suas motivações, frustrações e comportamentos digitais.',
     'lirmi-artifact-2-tag': 'Mapa de Empatia',
-    'lirmi-artifact-2-desc': 'O que o responsável pensa, sente, diz e faz ao interagir com o aplicativo.',
+    'lirmi-artifact-2-desc':
+      'O que o responsável pensa, sente, diz e faz ao interagir com o aplicativo.',
     'lirmi-artifact-3-tag': 'Journey Map',
-    'lirmi-artifact-3-desc': 'Jornada emocional do usuário desde a notificação recebida até completar (ou abandonar) uma tarefa no app.',
+    'lirmi-artifact-3-desc':
+      'Jornada emocional do usuário desde a notificação recebida até completar (ou abandonar) uma tarefa no app.',
     'lirmi-learnings-t': 'O que aprendi',
     'lirmi-learnings-em': 'com este projeto',
     'lirmi-learn-0-title': 'A adoção é um problema de comportamento, não só de UI',
-    'lirmi-learn-0-body': 'Melhorar a interface não é suficiente. As barreiras de adoção em usuários com baixa alfabetização digital requerem estratégias de onboarding, educação e acompanhamento.',
+    'lirmi-learn-0-body':
+      'Melhorar a interface não é suficiente. As barreiras de adoção em usuários com baixa alfabetização digital requerem estratégias de onboarding, educação e acompanhamento.',
     'lirmi-learn-1-title': 'A comunicação bidirecional é inegociável',
-    'lirmi-learn-1-body': 'Para que um produto de gestão escolar seja adotado, os usuários precisam sentir que têm agência. A capacidade de responder e iniciar contato é um diferenciador crítico.',
+    'lirmi-learn-1-body':
+      'Para que um produto de gestão escolar seja adotado, os usuários precisam sentir que têm agência. A capacidade de responder e iniciar contato é um diferenciador crítico.',
     'lirmi-learn-2-title': 'O research antecipado evita projetar soluções erradas',
-    'lirmi-learn-2-body': 'Sem entrevistas e testes de usabilidade, a equipe teria iterado sobre UI sem atacar o problema real. Validar a hipótese antes de projetar economizou tempo e recursos significativos.',
+    'lirmi-learn-2-body':
+      'Sem entrevistas e testes de usabilidade, a equipe teria iterado sobre UI sem atacar o problema real. Validar a hipótese antes de projetar economizou tempo e recursos significativos.',
     'lirmi-next-label': 'Próximo projeto',
     'lirmi-next-title1': 'Cartola de',
     'lirmi-next-title2': 'Investimento',
@@ -460,7 +520,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-back': 'Back',
     'lirmi-case-num': 'Case 01',
     'lirmi-subtitle': 'Connecting families with education',
-    'lirmi-brief': 'Redesign of a mobile school management app experience to increase adoption among parents, reduce the digital divide and enable two-way communication with the school.',
+    'lirmi-brief':
+      'Redesign of a mobile school management app experience to increase adoption among parents, reduce the digital divide and enable two-way communication with the school.',
     'lirmi-meta-role': 'Role',
     'lirmi-meta-year': 'Year',
     'lirmi-meta-platform': 'Platform',
@@ -478,39 +539,57 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-sec-7': 'UX Artifacts',
     'lirmi-sec-8': 'Learnings',
     'lirmi-ctx-t1': 'The product',
-    'lirmi-ctx-p1a': '<strong>Lirmi</strong> is a school management platform for teachers, students and parents. It provides access to services like educational library, lesson plans, assessments, rubrics, curriculum, school life, certificate issuance and parent communication.',
-    'lirmi-ctx-p1b': '<strong>Lirmi Familia</strong> is the instant mobile communication app between the school and parents, launched in 2020.',
+    'lirmi-ctx-p1a':
+      '<strong>Lirmi</strong> is a school management platform for teachers, students and parents. It provides access to services like educational library, lesson plans, assessments, rubrics, curriculum, school life, certificate issuance and parent communication.',
+    'lirmi-ctx-p1b':
+      '<strong>Lirmi Familia</strong> is the instant mobile communication app between the school and parents, launched in 2020.',
     'lirmi-ctx-t2': 'The initial challenge',
-    'lirmi-ctx-p2a': 'Despite its successful rollout across public and private schools, Lirmi Familia adoption was low. Parents kept falling back on traditional methods to complete tasks the app was supposed to handle.',
-    'lirmi-ctx-p2b': 'The team needed to understand <strong>why users weren\'t using the app</strong> and what design changes would increase real adoption.',
-    'lirmi-problem-quote': 'Parents don\'t use Lirmi Familia frequently and resort to paper despite having access to digital tools.',
+    'lirmi-ctx-p2a':
+      'Despite its successful rollout across public and private schools, Lirmi Familia adoption was low. Parents kept falling back on traditional methods to complete tasks the app was supposed to handle.',
+    'lirmi-ctx-p2b':
+      "The team needed to understand <strong>why users weren't using the app</strong> and what design changes would increase real adoption.",
+    'lirmi-problem-quote':
+      "Parents don't use Lirmi Familia frequently and resort to paper despite having access to digital tools.",
     'lirmi-problem-intro': 'Three critical factors were identified as root causes:',
     'lirmi-factor-1-title': 'Digital divide',
-    'lirmi-factor-1-body': 'Older parents struggle to understand the app\'s features. They don\'t grasp the product or the possibilities it offers.',
+    'lirmi-factor-1-body':
+      "Older parents struggle to understand the app's features. They don't grasp the product or the possibilities it offers.",
     'lirmi-factor-2-title': 'One-way communication',
-    'lirmi-factor-2-body': 'Users receive information but cannot reply or contact teachers or authorities directly. This generates active frustration.',
+    'lirmi-factor-2-body':
+      'Users receive information but cannot reply or contact teachers or authorities directly. This generates active frustration.',
     'lirmi-factor-3-title': 'Product underutilization',
-    'lirmi-factor-3-body': 'Slow adoption results in an underused tool, affecting the school\'s return on investment and family communication.',
+    'lirmi-factor-3-body':
+      "Slow adoption results in an underused tool, affecting the school's return on investment and family communication.",
     'lirmi-research-t': 'Research',
     'lirmi-research-em': 'methodology',
-    'lirmi-research-intro': 'Combining qualitative and quantitative methods allowed us to understand both deep motivations and the scope of identified problems.',
+    'lirmi-research-intro':
+      'Combining qualitative and quantitative methods allowed us to understand both deep motivations and the scope of identified problems.',
     'lirmi-tech-0-title': 'Interviews',
-    'lirmi-tech-0-desc': '1:1 sessions with parents to explore motivations, barriers and usage context.',
+    'lirmi-tech-0-desc':
+      '1:1 sessions with parents to explore motivations, barriers and usage context.',
     'lirmi-tech-1-title': 'Journey Map',
-    'lirmi-tech-1-desc': 'Mapping the user\'s emotional journey from notification to task resolution.',
+    'lirmi-tech-1-desc':
+      "Mapping the user's emotional journey from notification to task resolution.",
     'lirmi-tech-2-title': 'Usability testing',
-    'lirmi-tech-2-desc': 'Moderated testing with real tasks on the current app to identify key friction points.',
+    'lirmi-tech-2-desc':
+      'Moderated testing with real tasks on the current app to identify key friction points.',
     'lirmi-tech-3-title': 'Surveys',
-    'lirmi-tech-3-desc': 'Quantitative questionnaire to validate hypotheses and measure the scale of identified problems.',
+    'lirmi-tech-3-desc':
+      'Quantitative questionnaire to validate hypotheses and measure the scale of identified problems.',
     'lirmi-hyp-eyebrow1': 'Research hypothesis',
-    'lirmi-hyp-quote': 'Lirmi Familia does not meet all the needs of parents, so they stop using it and resort to traditional methods to carry out certain tasks.',
+    'lirmi-hyp-quote':
+      'Lirmi Familia does not meet all the needs of parents, so they stop using it and resort to traditional methods to carry out certain tasks.',
     'lirmi-hyp-eyebrow2': 'Research questions',
-    'lirmi-q1': 'What are the main needs and expectations that users have of a school management app?',
-    'lirmi-q2': 'How does the digital experience level of parents affect their adoption and use of Lirmi Familia?',
+    'lirmi-q1':
+      'What are the main needs and expectations that users have of a school management app?',
+    'lirmi-q2':
+      'How does the digital experience level of parents affect their adoption and use of Lirmi Familia?',
     'lirmi-user-t': 'Parents and guardians',
     'lirmi-user-em': 'committed to education',
-    'lirmi-user-p1': 'The target audience is parents and guardians between <strong>18 and 50 years old</strong> whose children attend educational institutions that use Lirmi in Santiago, Chile.',
-    'lirmi-user-p2': 'People committed to the education and well-being of their children, who may face challenges adopting and using digital apps.',
+    'lirmi-user-p1':
+      'The target audience is parents and guardians between <strong>18 and 50 years old</strong> whose children attend educational institutions that use Lirmi in Santiago, Chile.',
+    'lirmi-user-p2':
+      'People committed to the education and well-being of their children, who may face challenges adopting and using digital apps.',
     'lirmi-attr-1-title': 'Variable digital level',
     'lirmi-attr-1-body': 'From digital natives to users with little app experience',
     'lirmi-attr-2-title': 'Active educational context',
@@ -518,34 +597,45 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-attr-3-title': 'Limited time',
     'lirmi-attr-3-body': 'Need to resolve tasks quickly — no learning curves',
     'lirmi-attr-4-title': 'High motivation',
-    'lirmi-attr-4-body': 'Want to actively participate in their children\'s education',
+    'lirmi-attr-4-body': "Want to actively participate in their children's education",
     'lirmi-findings-t': 'What the research',
     'lirmi-findings-em': 'revealed',
     'lirmi-ins-0-title': 'Digital divide as adoption barrier',
-    'lirmi-ins-0-body': 'Parents over 40 reported not understanding the product\'s features. Familiarity with digital apps directly influences usage frequency.',
+    'lirmi-ins-0-body':
+      "Parents over 40 reported not understanding the product's features. Familiarity with digital apps directly influences usage frequency.",
     'lirmi-ins-1-title': 'One-way communication frustrates users',
-    'lirmi-ins-1-body': 'Parents receive information but cannot reply or start conversations. This limitation causes frustration and app abandonment in favor of paper.',
+    'lirmi-ins-1-body':
+      'Parents receive information but cannot reply or start conversations. This limitation causes frustration and app abandonment in favor of paper.',
     'lirmi-ins-2-title': 'Paper remains the trusted channel',
-    'lirmi-ins-2-body': 'Tasks like authorizations, permits and inquiries continue to be handled in person. The digital tool is not covering these critical needs.',
+    'lirmi-ins-2-body':
+      'Tasks like authorizations, permits and inquiries continue to be handled in person. The digital tool is not covering these critical needs.',
     'lirmi-ins-3-title': 'Low product awareness',
-    'lirmi-ins-3-body': 'Users were unaware of key app features. The lack of onboarding and discoverability directly contributes to platform underutilization.',
+    'lirmi-ins-3-body':
+      'Users were unaware of key app features. The lack of onboarding and discoverability directly contributes to platform underutilization.',
     'lirmi-artifacts-t': 'Tools that',
     'lirmi-artifacts-em': 'guided the design',
-    'lirmi-artifacts-intro': 'Research artifacts synthesized findings and served as the foundation for defining redesign criteria.',
+    'lirmi-artifacts-intro':
+      'Research artifacts synthesized findings and served as the foundation for defining redesign criteria.',
     'lirmi-artifact-1-tag': 'User Persona',
-    'lirmi-artifact-1-desc': 'Representation of the primary user with their motivations, frustrations and digital behaviors.',
+    'lirmi-artifact-1-desc':
+      'Representation of the primary user with their motivations, frustrations and digital behaviors.',
     'lirmi-artifact-2-tag': 'Empathy Map',
-    'lirmi-artifact-2-desc': 'What the parent thinks, feels, says and does when interacting with the app.',
+    'lirmi-artifact-2-desc':
+      'What the parent thinks, feels, says and does when interacting with the app.',
     'lirmi-artifact-3-tag': 'Journey Map',
-    'lirmi-artifact-3-desc': 'User\'s emotional journey from the received notification to completing (or abandoning) a task in the app.',
+    'lirmi-artifact-3-desc':
+      "User's emotional journey from the received notification to completing (or abandoning) a task in the app.",
     'lirmi-learnings-t': 'What I took away',
     'lirmi-learnings-em': 'from this project',
     'lirmi-learn-0-title': 'Adoption is a behavior problem, not just a UI problem',
-    'lirmi-learn-0-body': 'Improving the interface isn\'t enough. Adoption barriers for users with low digital literacy require onboarding, education and guidance strategies.',
+    'lirmi-learn-0-body':
+      "Improving the interface isn't enough. Adoption barriers for users with low digital literacy require onboarding, education and guidance strategies.",
     'lirmi-learn-1-title': 'Two-way communication is non-negotiable',
-    'lirmi-learn-1-body': 'For a school management product to be adopted, users need to feel they have agency. The ability to reply and initiate contact is a critical differentiator.',
+    'lirmi-learn-1-body':
+      'For a school management product to be adopted, users need to feel they have agency. The ability to reply and initiate contact is a critical differentiator.',
     'lirmi-learn-2-title': 'Early research prevents designing the wrong solutions',
-    'lirmi-learn-2-body': 'Without interviews and usability tests, the team would have iterated on UI without addressing the real problem. Validating the hypothesis before designing saved significant time and resources.',
+    'lirmi-learn-2-body':
+      'Without interviews and usability tests, the team would have iterated on UI without addressing the real problem. Validating the hypothesis before designing saved significant time and resources.',
     'lirmi-next-label': 'Next project',
     'lirmi-next-title1': 'Investment',
     'lirmi-next-title2': 'Statement',
