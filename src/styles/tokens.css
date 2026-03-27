@@ -1,0 +1,84 @@
+/* ══════════════════════════════════════════════════════════
+   CALO Design Tokens
+   Fuente única de verdad para todos los valores de diseño.
+   Importado en main.css — usado por componentes y Tailwind.
+══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Colores de marca ── */
+  --color-coral:        #E8503A;
+  --color-coral-light:  #FAE7E3;
+  --color-sage:         #6A9470;
+  --color-sage-light:   #E5F0E7;
+  --color-lav:          #8A7CB8;
+  --color-lav-light:    #ECEAF7;
+
+  /* ── Colores semánticos (modo claro) ── */
+  --color-bg:           #FAF8F4;
+  --color-bg2:          #F4F1EC;
+  --color-surface:      #FFFFFF;
+  --color-ink:          #18160F;
+  --color-ink2:         #4A4640;
+  --color-ink3:         #8A8680;
+  --color-border:       rgba(24, 22, 15, 0.08);
+  --color-border2:      rgba(24, 22, 15, 0.13);
+
+  /* ── Alias cream (compatibilidad Tailwind) ── */
+  --color-cream:        #FAF8F4;
+
+  /* ── Tipografía ── */
+  --font-serif: 'Lora', serif;
+  --font-sans:  'DM Sans', sans-serif;
+  --font-mono:  'DM Mono', monospace;
+
+  /* ── Espaciado y layout ── */
+  --nav-height:         60px;
+  --section-padding-x:  clamp(20px, 5vw, 80px);
+  --section-padding-y:  clamp(64px, 8vw, 120px);
+  --content-max:        1160px;
+
+  /* ── Radios ── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-soft: 0 4px 32px rgba(24, 22, 15, 0.09);
+  --shadow-lg:   0 10px 60px rgba(24, 22, 15, 0.14);
+
+  /* ── Transiciones ── */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 0.3s  cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── Nav background (con transparencia) ── */
+  --nav-bg: rgba(250, 248, 244, 0.75);
+}
+
+/* ══════════════════════════════════════════════════════════
+   Dark mode — clase .dark en <html> (Tailwind darkMode:'class')
+══════════════════════════════════════════════════════════ */
+.dark {
+  --color-coral:        #F06450;
+  --color-coral-light:  rgba(240, 100, 80, 0.14);
+  --color-sage:         #7AB882;
+  --color-sage-light:   rgba(106, 148, 112, 0.14);
+  --color-lav:          #A898D8;
+  --color-lav-light:    rgba(138, 124, 184, 0.14);
+
+  --color-bg:           #111009;
+  --color-bg2:          #1A1812;
+  --color-surface:      #222018;
+  --color-ink:          #F5F2EE;
+  --color-ink2:         #B8B4AE;
+  --color-ink3:         #6A6760;
+  --color-border:       rgba(245, 242, 238, 0.07);
+  --color-border2:      rgba(245, 242, 238, 0.12);
+
+  --color-cream:        #111009;
+
+  --shadow-soft: 0 4px 32px rgba(0, 0, 0, 0.3);
+  --shadow-lg:   0 10px 60px rgba(0, 0, 0, 0.4);
+  --nav-bg:      rgba(17, 16, 9, 0.75);
+}

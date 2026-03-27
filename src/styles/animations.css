@@ -1,0 +1,53 @@
+/* ══════════════════════════════════════════════════════════
+   CALO Global Animations
+   @keyframes con nombres semánticos.
+   Los componentes referencian estos nombres — no los redefinen.
+══════════════════════════════════════════════════════════ */
+
+/* Marquee infinito del StripSection */
+@keyframes strip-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Entrada de secciones al hacer scroll (IntersectionObserver) */
+@keyframes section-reveal {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Entrada de cards con ligero desplazamiento */
+@keyframes card-enter {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Fade simple para overlays y tooltips */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Entrada del Hero (usada también en HeroSection scoped, aquí como fuente canónica) */
+@keyframes h-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Cursor de diseño (SVG hero) */
+@keyframes cursor-move {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(96px); }
+}
+
+/* Dot de disponibilidad */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1;    transform: scale(1); }
+  50%       { opacity: 0.65; transform: scale(0.82); }
+}
+
+/* Flotación de elementos decorativos */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}

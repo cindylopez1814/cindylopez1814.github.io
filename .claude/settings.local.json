@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -o '#[A-Fa-f0-9]\\\\{3,6\\\\}' /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/illustration.svg)",
+      "Bash(python3 -:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/lirmi.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/lirmi.jpg\")",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola.jpg\")",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Isla nativa .png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/isla-nativa.jpg\")",
+      "mcp__filesystem__read_text_file"
+    ]
+  }
+}
