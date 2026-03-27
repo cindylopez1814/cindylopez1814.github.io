@@ -113,7 +113,7 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
         <div class="relative" ref="navCwRef">
           <button
             @click.stop="toggleContact"
-            :aria-expanded="contactOpen.toString()"
+            :aria-expanded="contactOpen"
             class="flex items-center gap-[7px] text-[13px] font-medium text-page bg-ink px-4 py-2 rounded-[22px] transition-all duration-200 hover:-translate-y-px hover:shadow-[0_5px_20px_rgba(24,22,15,.3)] active:translate-y-0 active:shadow-none"
           >
             <span

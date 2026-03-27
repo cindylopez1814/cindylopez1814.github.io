@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      // Truco SPA para GitHub Pages: redirige 404s al index.html
+      // preservando el path como query string para que Vue Router lo restaure.
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      window.location.replace('/?r=' + encodeURIComponent(path + search) + hash);
+    </script>
+  </head>
+  <body></body>
+</html>
