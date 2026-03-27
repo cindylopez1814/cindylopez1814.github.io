@@ -41,15 +41,6 @@ const { t } = useLang()
           <div class="footer-btns">
             <a href="mailto:cindy.lopezoportus@gmail.com" class="btn-primary">
               {{ t('btn-email') }}
-              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                <path
-                  d="M2 6h8M6 2l4 4-4 4"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
             </a>
             <a
               href="https://linkedin.com/in/cindy-l%C3%B3pez-oportus"
@@ -77,7 +68,10 @@ const { t } = useLang()
           <div class="footer-nav-label">{{ t('contact-label') }}</div>
           <div class="footer-nav-list">
             <a href="mailto:cindy.lopezoportus@gmail.com">cindy.lopezoportus@gmail.com</a>
-            <a href="https://linkedin.com/in/cindy-l%C3%B3pez-oportus" target="_blank" rel="noopener noreferrer"
+            <a
+              href="https://linkedin.com/in/cindy-l%C3%B3pez-oportus"
+              target="_blank"
+              rel="noopener noreferrer"
               >LinkedIn</a
             >
             <a href="/CV-CindyLopez-2026.pdf" download>{{ t('cv-label') }} →</a>

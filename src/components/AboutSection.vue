@@ -107,13 +107,20 @@ const skills = [
             />
           </svg>
           {{ t('cv-label') }}
-          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <!-- Download arrow icon -->
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
             <path
-              d="M2 6h8M6 2l4 4-4 4"
+              d="M6 1v7M3 5.5l3 3 3-3"
               stroke="currentColor"
               stroke-width="1.5"
               stroke-linecap="round"
               stroke-linejoin="round"
+            />
+            <path
+              d="M1.5 10h9"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
             />
           </svg>
         </a>
@@ -370,8 +377,10 @@ const skills = [
 .btn-cv {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 7px;
   align-self: flex-start;
+  width: 100%;
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 500;
@@ -391,6 +400,12 @@ const skills = [
   border-color: var(--color-coral);
   color: var(--color-coral);
   background: var(--color-coral-light);
+}
+
+@media (min-width: 768px) {
+  .btn-cv {
+    width: auto;
+  }
 }
 
 /* ══════════════════════════════════════════

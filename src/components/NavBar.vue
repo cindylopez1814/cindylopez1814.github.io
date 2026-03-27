@@ -66,21 +66,19 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
       </div>
 
       <!-- ── Right side ── -->
-      <div class="flex m-4" style="width: 100%">
+      <div class="flex items-center gap-1.5 flex-shrink-0">
         <!-- Nav links (visible ≥ 560 px) -->
-        <div class="gap-1 inline-flex items-center justify-center" style="width: 100%">
-          <button
-            @click="goSection('#work')"
-            class="hidden min-[560px]:block text-sm text-ink2 px-[13px] py-[7px] rounded-full transition-all duration-[180ms] hover:text-ink hover:bg-line"
-          >
-            {{ t('nav-work') }}
-          </button>
-        </div>
+        <button
+          @click="goSection('#work')"
+          class="hidden min-[560px]:block text-sm text-ink2 px-[13px] py-[7px] rounded-full transition-all duration-[180ms] hover:text-ink hover:bg-line"
+        >
+          {{ t('nav-work') }}
+        </button>
 
-        <div class="flex items-center mx-6" style="justify-content: center">
+        <div class="flex items-center gap-1">
           <!-- Language switcher -->
           <div
-            class="flex items-center gap-0.5 bg-page2 border border-line-strong rounded-[22px] p-[3px] mr-1.5"
+            class="flex items-center gap-0.5 bg-page2 border border-line-strong rounded-[22px] p-[3px]"
             role="group"
             aria-label="Language"
           >
@@ -101,7 +99,7 @@ onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
           <!-- Dark mode toggle -->
           <button
             @click="toggleDark"
-            class="w-9 h-9 rounded-full flex items-center justify-center bg-page2 border border-line-strong text-ink2 text-base mr-1 transition-all duration-200 hover:bg-line-strong hover:rotate-[20deg]"
+            class="w-9 h-9 rounded-full flex items-center justify-center bg-page2 border border-line-strong text-ink2 text-base transition-all duration-200 hover:bg-line-strong hover:rotate-[20deg]"
             aria-label="Toggle dark mode"
           >
             <span v-if="isDark" aria-hidden="true">☀️</span>

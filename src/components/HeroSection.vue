@@ -19,7 +19,7 @@ const { t } = useLang()
   >
     <!-- Subtle radial accents (inherited from body::after, just ensuring z stacking) -->
     <div
-      class="w-full max-w-[1160px] mx-auto px-5 md:px-10 flex flex-col md:flex-row items-center gap-12 md:gap-[60px] pb-14 md: md:pb-20 relative z-10"
+      class="w-full max-w-[1160px] mx-auto px-5 md:px-10 flex flex-col md:flex-row items-center gap-12 md:gap-[60px] pt-20 md:pt-0 pb-14 md:pb-20 relative z-10"
     >
       <!-- ════════════════════════
            LEFT — Copy estratégico
@@ -98,7 +98,7 @@ const { t } = useLang()
            RIGHT — Ilustración con etiquetas Figma
       ════════════════════════ -->
       <div
-        class="anim-h-in w-full max-w-[340px] mx-auto md:w-[350px] md:max-w-[350px] md:mx-0 md:flex-shrink-0"
+        class="anim-h-in w-full max-w-[250px] mx-auto md:w-[300px] md:max-w-[320px] md:mx-0 md:flex-shrink-0"
         style="animation-delay: 0.18s"
       >
         <HeroIllustration />

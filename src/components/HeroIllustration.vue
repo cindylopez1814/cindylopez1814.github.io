@@ -293,7 +293,7 @@ import illustrationSvg from '../assets/illustration.svg?raw'
 ══════════════════════════════════════════════ */
 .figma-cursor {
   position: absolute;
-  top: 10%;
+  top: 30%;
   right: 4%;
   display: flex;
   align-items: center;
@@ -346,8 +346,8 @@ import illustrationSvg from '../assets/illustration.svg?raw'
 
 /* Frontend aware — MID RIGHT, cerca del cursor */
 .figma-frame-label.frontend-aware {
-  right: 3%;
-  top: 28%;
+  right: -12%;
+  top: 5%;
   border-color: rgba(232, 80, 58, 0.25);
   animation: badge-float 6.5s ease-in-out infinite 1.4s;
 }
@@ -472,7 +472,7 @@ import illustrationSvg from '../assets/illustration.svg?raw'
     left: 0%;
   }
   .figma-frame-label.frontend-aware {
-    right: 0%;
+    right: -20%;
     top: 24%;
   }
   .figma-sticky {
