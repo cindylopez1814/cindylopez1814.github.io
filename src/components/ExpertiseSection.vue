@@ -5,54 +5,60 @@ import { useLang } from '../composables/useLang'
 const { t, lang } = useLang()
 
 interface Card {
-  id:       string
-  num:      string
-  icon:     string
-  iconBg:   string
-  accent:   string
-  titleEmKey:   string   // primera línea — italic coral
-  titleRestKey: string   // segunda línea — normal
-  bodyKey:  string
-  steps:    string[]
-  tags:     string[]
+  id: string
+  num: string
+  icon: string
+  iconBg: string
+  accent: string
+  titleEmKey: string // primera línea — italic coral
+  titleRestKey: string // segunda línea — normal
+  bodyKey: string
+  steps: string[]
+  tags: string[]
 }
 
 const cards = computed<Card[]>(() => [
   {
-    id:     'ux',
-    num:    '01 — UX',
-    icon:   '🔍',
+    id: 'ux',
+    num: '01 — UX',
+    icon: '🔍',
     iconBg: 'rgba(138,124,184,0.12)',
     accent: 'var(--color-lav)',
-    titleEmKey:   'exp-ux-title-em',
+    titleEmKey: 'exp-ux-title-em',
     titleRestKey: 'exp-ux-title-rest',
     bodyKey: 'exp-ux-body',
     steps: [t('exp-ux-s1'), t('exp-ux-s2'), t('exp-ux-s3'), t('exp-ux-s4')],
     tags: ['Research', 'Benchmark', 'Journey map', 'Usability Testing', 'Insights'],
   },
   {
-    id:     'ui',
-    num:    '02 — UI',
-    icon:   '✦',
+    id: 'ui',
+    num: '02 — UI',
+    icon: '✦',
     iconBg: 'rgba(232,80,58,0.10)',
     accent: 'var(--color-coral)',
-    titleEmKey:   'exp-ui-title-em',
+    titleEmKey: 'exp-ui-title-em',
     titleRestKey: 'exp-ui-title-rest',
     bodyKey: 'exp-ui-body',
     steps: [t('exp-ui-s1'), t('exp-ui-s2'), t('exp-ui-s3'), t('exp-ui-s4')],
     tags: ['Figma', 'Design tokens', 'Microcopy', 'Accesibilidad', 'Prototyping'],
   },
   {
-    id:     'dev',
-    num:    '03 — DEV',
-    icon:   '⌨️',
+    id: 'dev',
+    num: '03 — DEV',
+    icon: '⌨️',
     iconBg: 'rgba(106,148,112,0.12)',
     accent: 'var(--color-sage)',
-    titleEmKey:   'exp-dev-title-em',
+    titleEmKey: 'exp-dev-title-em',
     titleRestKey: 'exp-dev-title-rest',
     bodyKey: 'exp-dev-body',
     steps: [t('exp-dev-s1'), t('exp-dev-s2'), t('exp-dev-s3'), t('exp-dev-s4')],
-    tags: ['HTML/CSS', 'Frontend logic', 'Figma Dev Mode', 'Component thinking', 'AI-assisted workflow'],
+    tags: [
+      'HTML/CSS',
+      'Frontend logic',
+      'Figma Dev Mode',
+      'Component thinking',
+      'AI-assisted workflow',
+    ],
   },
 ])
 
@@ -63,18 +69,18 @@ void lang
 <template>
   <section class="expertise-section" id="expertise" aria-labelledby="expertise-heading">
     <div class="expertise-inner">
-
       <!-- ── Header ── -->
       <div class="expertise-header" data-reveal>
         <div class="expertise-header__text">
           <span class="sec-label-dk">{{ t('expertise-label') }}</span>
           <h2 id="expertise-heading" class="expertise-title">
-            <span>{{ t('exp-t1') }}</span><br>
+            <span>{{ t('exp-t1') }}</span
+            ><br />
             <em>{{ t('exp-t2') }}</em>
             <span>{{ t('exp-t3') }}</span>
           </h2>
         </div>
-        <p class="expertise-sub">{{ t('exp-sub') }}</p>
+        <p class="expertise-sub flex">{{ t('exp-sub') }}</p>
       </div>
 
       <!-- ── Cards grid ── -->
@@ -94,7 +100,8 @@ void lang
 
           <!-- Título: línea 1 italic coral + línea 2 normal -->
           <h3 class="exp-title">
-            <em>{{ t(card.titleEmKey) }}</em><br>
+            <em>{{ t(card.titleEmKey) }}</em
+            ><br />
             <span>{{ t(card.titleRestKey) }}</span>
           </h3>
 
@@ -104,8 +111,21 @@ void lang
           <!-- Steps -->
           <ul class="exp-steps" aria-label="Proceso">
             <li v-for="step in card.steps" :key="step" class="exp-step">
-              <svg class="step-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                <path d="M6 2v8M2.5 6.5 6 10l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg
+                class="step-arrow"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 2v8M2.5 6.5 6 10l3.5-3.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
               <span class="step-text">{{ step }}</span>
             </li>
@@ -117,7 +137,6 @@ void lang
           </div>
         </article>
       </div>
-
     </div>
   </section>
 </template>
@@ -131,7 +150,7 @@ void lang
   padding: clamp(72px, 10vw, 120px) var(--section-padding-x, clamp(20px, 5vw, 80px));
   position: relative;
   overflow: hidden;
-  border-top:    1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -139,9 +158,11 @@ void lang
 .expertise-section::before {
   content: '';
   position: absolute;
-  top: -100px; right: -100px;
-  width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(232,80,58,0.07) 0%, transparent 65%);
+  top: -100px;
+  right: -100px;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(232, 80, 58, 0.07) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -201,7 +222,6 @@ void lang
 .expertise-sub {
   font-size: 14px;
   color: var(--color-ink2);
-  max-width: 480px;
   line-height: 1.65;
   margin: 4px 0 0;
 }
@@ -217,11 +237,15 @@ void lang
 }
 
 @media (min-width: 640px) {
-  .exp-grid { grid-template-columns: 1fr 1fr; }
+  .exp-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 960px) {
-  .exp-grid { grid-template-columns: repeat(3, 1fr); }
+  .exp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ══════════════════════════════════════════
@@ -238,15 +262,22 @@ void lang
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 18px rgba(24,22,15,0.07), inset 0 1px 0 rgba(255,255,255,0.8);
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  box-shadow:
+    0 2px 18px rgba(24, 22, 15, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
 }
 
 /* barra de color en el top al hacer hover */
 .exp-card::after {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
   border-radius: 3px 3px 0 0;
   background: var(--card-accent);
@@ -267,8 +298,10 @@ void lang
 /* Dark mode cards */
 .dark .exp-card {
   background: rgba(34, 28, 20, 0.55);
-  border-color: rgba(255,255,255,0.07);
-  box-shadow: 0 2px 18px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.04);
+  border-color: rgba(255, 255, 255, 0.07);
+  box-shadow:
+    0 2px 18px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 /* ── Card elements ── */
@@ -387,15 +420,15 @@ void lang
 }
 
 .dark .exp-step {
-  background: rgba(255,255,255,0.04);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .dark .exp-step:hover {
-  background: rgba(255,255,255,0.07);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .dark .exp-tag {
-  background: rgba(255,255,255,0.05);
-  border-color: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 </style>

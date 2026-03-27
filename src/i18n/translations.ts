@@ -26,11 +26,11 @@ export const translations: Record<Lang, Record<string, string>> = {
     'about-t2': 'con base en código.',
     'about-t3': 'Diseño soluciones que funcionan.',
     'about-p1':
-      'Empecé como <strong>desarrolladora frontend</strong>, trabajando con HTML, CSS y Angular en productos reales.',
+      'Comencé mi carrera en frontend trabajando en productos reales, lo que me dio una <strong>base técnica sólida</strong> y una comprensión de cómo se construyen las interfaces.</strong>',
     'about-p2':
-      'Hoy soy Product Designer y trabajo de punta a punta: desde entender el problema hasta diseñar y llevarlo a código. Me especializo en hacer <strong>simple lo complejo</strong>, especialmente en productos donde conviven negocio, tecnología y usuarios no expertos.',
+      'Hoy soy Product Designer y trabajo end-to-end, desde entender el problema hasta diseñar soluciones junto a negocio y desarrollo. Me especializo en <strong>simplificar escenarios complejos</strong>, especialmente en productos con múltiples reglas y usuarios no expertos.',
     'about-p3':
-      'Diseño con foco en <strong>claridad, consistencia</strong> y que las cosas realmente funcionen.',
+      'Diseño con foco en <strong>claridad, consistencia</strong> y soluciones que realmente funcionan.',
     'skills-label': 'Skills',
     // Projects
     'work-label': 'Proyectos seleccionados',
@@ -242,11 +242,11 @@ export const translations: Record<Lang, Record<string, string>> = {
     'about-t2': 'com base em código.',
     'about-t3': 'Projeto soluções que funcionam.',
     'about-p1':
-      'Comecei como <strong>desenvolvedora frontend</strong>, trabalhando com HTML, CSS e Angular em produtos reais.',
+      'Comecei minha carreira como frontend, trabalhando em produtos reais, o que me deu uma <strong>base técnica sólida</strong> e uma boa compreensão de como as interfaces são construídas.',
     'about-p2':
-      'Hoje sou Product Designer e trabalho de ponta a ponta: desde entender o problema até projetar e levá-lo ao código. Me especializo em <strong>simplificar o complexo</strong>, especialmente em produtos onde convivem negócio, tecnologia e usuários não especialistas.',
+      'Hoje sou Product Designer e trabalho de ponta a ponta, desde entender o problema até desenhar soluções junto com negócio e desenvolvimento. Me especializo em  <strong>simplificar cenários complexos</strong>, especialmente em produtos com múltiplas regras e usuários não especialistas.',
     'about-p3':
-      'Projeto com foco em <strong>clareza, consistência</strong> e que as coisas realmente funcionem.',
+      'Projeto com foco em <strong>clareza, consistência</strong> e soluções que realmente funcionam.',
     'work-label': 'Projetos selecionados',
     'p1-title': 'Lirmi Família',
     'p1-desc':
@@ -453,11 +453,11 @@ export const translations: Record<Lang, Record<string, string>> = {
     'about-t2': 'with roots in code.',
     'about-t3': 'I design solutions that work.',
     'about-p1':
-      'I started as a <strong>frontend developer</strong>, working with HTML, CSS and Angular on real products.',
+      'I started my career in frontend, working on real products, which gave me a <strong>strong technical foundation</strong> and a solid understanding of how interfaces are built.',
     'about-p2':
-      "Today I'm a Product Designer working end-to-end: from understanding the problem to designing and shipping to code. I specialize in making <strong>complex things simple</strong>, especially in products where business, technology and non-expert users coexist.",
+      'Today I’m a Product Designer, working end-to-end from understanding the problem to designing solutions alongside business and development teams. I specialize in  <strong>simplifying complex scenarios</strong>, especially in products with multiple rules and non-expert users.',
     'about-p3':
-      'I design with a focus on <strong>clarity, consistency</strong> and making things actually work.',
+      'I design with a focus on <strong>clarity, consistency</strong> and solutions that truly work.',
     'work-label': 'Selected work',
     'p1-title': 'Lirmi Familia',
     'p1-desc':

@@ -52,7 +52,7 @@ const skills = [
           <p v-html="t('about-p3')"></p>
         </div>
 
-        <!-- Empresas -->
+        <!-- skills -->
         <div class="clients-block">
           <span class="clients-label">{{ t('skills-label') }}</span>
           <!-- Skills bar -->
@@ -116,12 +116,7 @@ const skills = [
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-            <path
-              d="M1.5 10h9"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
+            <path d="M1.5 10h9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
         </a>
       </div>
@@ -172,7 +167,7 @@ const skills = [
               </div>
               <h3 class="proj-title">{{ t('p2-title') }}</h3>
               <p class="proj-desc">{{ t('p2-desc') }}</p>
-              <span class="proj-link">{{ t('proj-view') }}</span>
+              <span class="proj-link proj-link--disabled">{{ t('proj-wip') }}</span>
             </div>
           </article>
 

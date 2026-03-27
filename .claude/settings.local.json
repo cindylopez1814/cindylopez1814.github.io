@@ -7,7 +7,10 @@
       "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/lirmi.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/lirmi.jpg\")",
       "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola.jpg\")",
       "Bash(sips -s format jpeg -s formatOptions 82 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Isla nativa .png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/isla-nativa.jpg\")",
-      "mcp__filesystem__read_text_file"
+      "mcp__filesystem__read_text_file",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/miniatura.png)",
+      "Bash(sips -s format jpeg -s formatOptions 85 -Z 1200 /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/miniatura.png --out /Users/bctecnologia/Documents/calo-portfolio-v2/public/og-preview.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/bctecnologia/Documents/calo-portfolio-v2/public/og-preview.jpg)"
     ]
   }
 }

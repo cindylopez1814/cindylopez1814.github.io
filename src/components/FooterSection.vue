@@ -99,7 +99,7 @@ const { t } = useLang()
 .site-footer {
   background: var(--color-bg);
   border-top: 1px solid var(--color-border);
-  padding: clamp(48px, 7vw, 72px) var(--section-padding-x, clamp(20px, 5vw, 80px)) 36px;
+  padding: clamp(36px, 7vw, 72px) var(--section-padding-x, clamp(20px, 5vw, 80px)) 36px;
 }
 
 .footer-inner {
@@ -317,6 +317,7 @@ const { t } = useLang()
   display: flex;
   flex-direction: column;
   gap: 6px;
+  align-items: center;
 }
 
 @media (min-width: 600px) {
