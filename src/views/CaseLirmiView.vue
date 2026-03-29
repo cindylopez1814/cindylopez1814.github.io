@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, computed, ref } from 'vue'
+import { onMounted, computed, ref, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import NavBar from '../components/NavBar.vue'
 import { useLang } from '../composables/useLang'
@@ -39,18 +39,25 @@ onMounted(() => {
 })
 
 onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-          observer.unobserve(entry.target)
-        }
+  nextTick(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.01, rootMargin: '0px' },
+    )
+    document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el))
+    setTimeout(() => {
+      document.querySelectorAll('[data-reveal]:not(.is-visible)').forEach((el) => {
+        el.classList.add('is-visible')
       })
-    },
-    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' },
-  )
-  document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el))
+    }, 700)
+  })
 })
 
 const techniques = computed(() => [

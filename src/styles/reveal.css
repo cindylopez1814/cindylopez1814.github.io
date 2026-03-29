@@ -12,6 +12,16 @@
     opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   transition-delay: var(--reveal-delay, 0s);
+  animation-fill-mode: forwards;
+}
+
+/* Si el usuario prefiere menos movimiento, mostrar todo de inmediato */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 [data-reveal='from-left'] {
