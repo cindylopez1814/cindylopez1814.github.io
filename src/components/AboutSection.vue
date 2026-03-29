@@ -153,7 +153,7 @@ const skills = [
           </article>
 
           <!-- Proyecto 2 — Cartola de Inversión -->
-          <article class="proj-card">
+          <article class="proj-card proj-card--link" @click="router.push('/case/cartola')">
             <div class="proj-thumb">
               <span class="proj-badge">Fintech</span>
               <div class="proj-img-wrap">
@@ -167,7 +167,7 @@ const skills = [
               </div>
               <h3 class="proj-title">{{ t('p2-title') }}</h3>
               <p class="proj-desc">{{ t('p2-desc') }}</p>
-              <span class="proj-link proj-link--disabled">{{ t('proj-wip') }}</span>
+              <span class="proj-link">{{ t('proj-view') }}</span>
             </div>
           </article>
 

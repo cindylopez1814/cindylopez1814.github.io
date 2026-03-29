@@ -14,6 +14,10 @@ const router = createRouter({
       path: '/case/lirmi',
       component: () => import('../views/CaseLirmiView.vue'),
     },
+    {
+      path: '/case/cartola',
+      component: () => import('../views/CaseCartolaView.vue'),
+    },
   ],
 })
 

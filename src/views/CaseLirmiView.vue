@@ -32,7 +32,9 @@ function closeModal() {
 }
 
 onMounted(() => {
-  const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') closeModal() }
+  const onKey = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') closeModal()
+  }
   document.addEventListener('keydown', onKey)
 })
 
@@ -59,10 +61,30 @@ const techniques = computed(() => [
 ])
 
 const insights = computed(() => [
-  { num: '01', accent: 'var(--color-coral)', title: t('lirmi-ins-0-title'), body: t('lirmi-ins-0-body') },
-  { num: '02', accent: 'var(--color-lav)', title: t('lirmi-ins-1-title'), body: t('lirmi-ins-1-body') },
-  { num: '03', accent: 'var(--color-sage)', title: t('lirmi-ins-2-title'), body: t('lirmi-ins-2-body') },
-  { num: '04', accent: 'var(--color-coral)', title: t('lirmi-ins-3-title'), body: t('lirmi-ins-3-body') },
+  {
+    num: '01',
+    accent: 'var(--color-coral)',
+    title: t('lirmi-ins-0-title'),
+    body: t('lirmi-ins-0-body'),
+  },
+  {
+    num: '02',
+    accent: 'var(--color-lav)',
+    title: t('lirmi-ins-1-title'),
+    body: t('lirmi-ins-1-body'),
+  },
+  {
+    num: '03',
+    accent: 'var(--color-sage)',
+    title: t('lirmi-ins-2-title'),
+    body: t('lirmi-ins-2-body'),
+  },
+  {
+    num: '04',
+    accent: 'var(--color-coral)',
+    title: t('lirmi-ins-3-title'),
+    body: t('lirmi-ins-3-body'),
+  },
 ])
 
 const learnings = computed(() => [
@@ -115,7 +137,7 @@ const learnings = computed(() => [
             <div class="case-meta">
               <div class="case-meta__item">
                 <span class="case-meta__label">{{ t('lirmi-meta-role') }}</span>
-                <span class="case-meta__val">Product Designer — UX Research & UI</span>
+                <span class="case-meta__val">UX Research (único rol)</span>
               </div>
               <div class="case-meta__item">
                 <span class="case-meta__label">{{ t('lirmi-meta-year') }}</span>
@@ -460,8 +482,8 @@ const learnings = computed(() => [
         <p class="case-footer__sub">{{ t('lirmi-next-sub') }}</p>
         <div class="case-footer__btns">
           <button class="btn-back-home" @click="goBack">{{ t('lirmi-btn-back') }}</button>
-          <button class="btn-next" disabled>
-            {{ t('lirmi-btn-view') }} <span class="btn-next__wip">{{ t('lirmi-next-soon') }}</span>
+          <button class="btn-next" @click="router.push('/case/cartola')">
+            {{ t('lirmi-btn-view') }}
           </button>
         </div>
       </div>
@@ -1497,11 +1519,15 @@ const learnings = computed(() => [
   font-weight: 500;
   color: var(--color-bg);
   background: var(--color-ink);
-  opacity: 0.4;
   border: none;
   padding: 11px 22px;
   border-radius: var(--radius-full);
-  cursor: not-allowed;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.btn-next:hover {
+  background: var(--color-sage);
 }
 
 .dark .btn-next {

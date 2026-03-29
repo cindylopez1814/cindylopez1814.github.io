@@ -16,7 +16,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'hero-title-2': 'complejos en productos',
     'hero-title-3': 'claros y escalables.',
     'hero-sub':
-      'Con raíces en <strong>desarrollo frontend</strong>, diseño de punta a punta entendiendo el código, el usuario y el negocio — menos fricción, mejores productos.',
+      'Con raíces en <strong>desarrollo frontend</strong>, diseño de punta a punta entendiendo el código, el usuario y el negocio. Menos fricción, mejores productos.',
     years: 'años',
     // Strip
     'strip-label': 'Skills & herramientas',
@@ -172,7 +172,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-attr-2-title': 'Contexto educacional activo',
     'lirmi-attr-2-body': 'Con hijos en colegios que ya usan la plataforma Lirmi',
     'lirmi-attr-3-title': 'Tiempo limitado',
-    'lirmi-attr-3-body': 'Necesitan resolver tareas rápido — sin curvas de aprendizaje',
+    'lirmi-attr-3-body': 'Necesitan resolver tareas rápido, sin curvas de aprendizaje',
     'lirmi-attr-4-title': 'Alta motivación',
     'lirmi-attr-4-body': 'Quieren participar activamente en la educación de sus hijos',
     'lirmi-findings-t': 'Lo que el research',
@@ -220,6 +220,154 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-next-soon': 'Próximamente',
     'lirmi-btn-view': 'Ver caso →',
     'lirmi-btn-back': '← Volver al portfolio',
+    // ── Cartola de Inversión ──────────────────────
+    'cartola-back': 'Volver',
+    'cartola-case-num': 'Caso 02',
+    'cartola-subtitle': 'Rediseño de cartola financiera compleja',
+    'cartola-brief':
+      'Simplificación de información, jerarquía visual y validación con usuarios para mejorar la comprensión y la confianza en el producto.',
+    'cartola-meta-role': 'Rol',
+    'cartola-meta-year': 'Año',
+    'cartola-meta-platform': 'Soporte',
+    'cartola-meta-tools': 'Herramientas',
+    'cartola-badge-before': 'Antes',
+    'cartola-badge-after': 'Después',
+    'cartola-hero-title': 'De la confusión a la claridad financiera',
+    'cartola-stat-interviews': 'Entrevistas en profundidad',
+    'cartola-stat-surveys': 'Encuestas de preferencia',
+    'cartola-stat-users': 'Usuarios en test de tareas',
+    'cartola-stat-pref': 'Prefirió la nueva versión',
+    'cartola-sec-1': 'Contexto',
+    'cartola-ctx-t1': 'El producto',
+    'cartola-ctx-p1a':
+      'La <strong>Cartola de Inversión</strong> es el documento principal que los clientes de Banchile usan para entender su patrimonio, rentabilidad y composición de inversiones.',
+    'cartola-ctx-p1b':
+      'Es uno de los puntos de contacto más críticos con el cliente, distribuido mensualmente en versión física y digital.',
+    'cartola-ctx-t2': 'El desafío',
+    'cartola-ctx-p2a':
+      'La cartola acumulaba años de información sin revisión estructural. La versión existente no distinguía entre datos primarios y secundarios.',
+    'cartola-ctx-p2b':
+      'El equipo comercial reportaba que clientes llamaban frecuentemente con preguntas básicas sobre su cartera, señal de que el documento <strong>no cumplía su función</strong>.',
+    'cartola-sec-2': 'Problema',
+    'cartola-problem-quote': '"No sé si estoy ganando o perdiendo plata."',
+    'cartola-problem-intro':
+      'A pesar de contener toda la información necesaria, los usuarios fallaban sistemáticamente en tareas básicas de lectura de cartera.',
+    'cartola-factor-1-title': 'Sobrecarga de información',
+    'cartola-factor-1-body':
+      'Sin jerarquía clara, los usuarios no sabían dónde mirar primero. Todo competía por la misma atención visual.',
+    'cartola-factor-2-title': 'Métricas clave enterradas',
+    'cartola-factor-2-body':
+      'Ganancia/pérdida y patrimonio total, los datos más buscados, no tenían protagonismo visual.',
+    'cartola-factor-3-title': 'Inconsistencia física/digital',
+    'cartola-factor-3-body':
+      'Diferente diseño entre versión impresa y digital generaba confusión y desconfianza en la información.',
+    'cartola-sec-3': 'Research',
+    'cartola-research-t': 'Investigación',
+    'cartola-research-em': 'mixta y centrada en tareas',
+    'cartola-research-intro':
+      'Combiné entrevistas para entender contexto y emociones, con tests de tareas medibles para detectar exactamente dónde fallaba la lectura.',
+    'cartola-tech-0-title': 'Entrevistas',
+    'cartola-tech-0-desc':
+      'Comprensión del modelo mental del inversionista y sus frustraciones con el documento actual.',
+    'cartola-tech-1-title': 'Encuestas',
+    'cartola-tech-1-desc':
+      'Test de preferencia visual entre versiones del diseño para validar jerarquía y claridad percibida.',
+    'cartola-tech-2-title': 'Test de tareas',
+    'cartola-tech-2-desc':
+      'Medición de tiempo y tasa de éxito en 5 tareas clave a través de 3 versiones del diseño.',
+    'cartola-tech-3-title': 'Test A/B',
+    'cartola-tech-3-desc':
+      'Comparación directa entre cartola actual vs propuesta con usuarios reales de Banchile.',
+    'cartola-sec-4': 'Hipótesis',
+    'cartola-hyp-eyebrow1': 'Hipótesis de diseño',
+    'cartola-hyp-quote':
+      'Si priorizamos patrimonio total, ganancia/pérdida y composición como foco principal, los usuarios identificarán su situación financiera más rápido y con mayor confianza.',
+    'cartola-hyp-eyebrow2': 'Preguntas guía',
+    'cartola-q1': '¿Qué información busca primero un inversionista al abrir su cartola?',
+    'cartola-q2':
+      '¿Qué nivel de detalle necesita un usuario no experto para tomar decisiones financieras?',
+    'cartola-sec-5': 'Hallazgos',
+    'cartola-findings-t': 'Lo que el research',
+    'cartola-findings-em': 'reveló',
+    'cartola-ins-0-title': 'Jerarquía rota',
+    'cartola-ins-0-body':
+      'Exceso de información sin orden visual claro. Los usuarios escaneaban sin saber por dónde empezar.',
+    'cartola-ins-1-title': 'Métricas invisibles',
+    'cartola-ins-1-body':
+      'Ganancia/pérdida y patrimonio, los datos más buscados, estaban enterrados entre información secundaria.',
+    'cartola-ins-2-title': 'Gráficos confusos',
+    'cartola-ins-2-body':
+      'Representaciones visuales difíciles de interpretar para usuarios sin perfil financiero experto.',
+    'cartola-ins-3-title': 'Doble versión, doble confusión',
+    'cartola-ins-3-body':
+      'La inconsistencia entre cartola física y digital generaba desconfianza y preguntas sobre la información.',
+    'cartola-sec-6': 'Proceso de diseño',
+    'cartola-process-t': 'De hipótesis',
+    'cartola-process-em': 'a solución validada',
+    'cartola-process-intro':
+      'Iteré 4 versiones del diseño, cada una informada por los hallazgos del test anterior. El objetivo: encontrar el balance entre completitud y claridad.',
+    'cartola-v0-label': 'Primera propuesta',
+    'cartola-v0-desc': 'Primera iteración de diseño. Reestructuración de bloques semánticos y jerarquía visual inicial.',
+    'cartola-v1-label': 'Segunda propuesta',
+    'cartola-v1-desc': 'Refinamiento de bloques semánticos. Mejora del 50% en tarea 1.',
+    'cartola-v2-label': 'Refinamiento',
+    'cartola-v2-desc': 'Énfasis en métricas principales. Reducción de 40% en tiempo promedio.',
+    'cartola-v3-label': 'Resultado final',
+    'cartola-v3-desc': 'Jerarquía semántica completa. 75% de usuarios la prefirió en test final.',
+    'cartola-sec-7': 'Validación de Diseño',
+    'cartola-test-t': 'Mapas de calor',
+    'cartola-test-em': 'del proceso iterativo',
+    'cartola-test-intro':
+      'Cada versión fue sometida a tests de usabilidad con usuarios reales. Los mapas de calor revelan cómo evolucionó el comportamiento visual: de clicks dispersos en V.0 a foco total en las métricas clave en V.2.',
+    'cartola-test-t1-label': 'Tarea 1',
+    'cartola-test-t1-obj': 'Identifica tu monto de inversión',
+    'cartola-test-t1-summary':
+      'En V.0, los clicks estaban dispersos por toda la pantalla. En V.1 y V.2, el 100% de usuarios fue directamente al bloque de patrimonio total.',
+    'cartola-test-t1-v0-note': 'Clicks dispersos. Sin punto focal claro. Tasa de error alta.',
+    'cartola-test-t1-v1-note': 'Mejora significativa. Concentración en la sección de patrimonio.',
+    'cartola-test-t1-v2-note': 'Focus total en métricas clave. Tiempo promedio reducido 40%.',
+    'cartola-test-t3-label': 'Tarea 3',
+    'cartola-test-t3-obj': 'Identifica cuánto estás rentando',
+    'cartola-test-t3-summary':
+      'La tarea de rentabilidad pasó de ser una de las más confusas (71% éxito en V.0) a lograrse con claridad total en V.2, con tiempo promedio de 7.3 segundos.',
+    'cartola-test-t3-v0-note': 'Alta dispersión. Rentabilidad enterrada entre datos secundarios.',
+    'cartola-test-t3-v1-note': 'Jerarquía mejorada. Usuarios localizan la sección más rápido.',
+    'cartola-test-t3-v2-note': 'Éxito total. Bloque de rentabilidad claramente identificable.',
+    'cartola-sec-8': 'Resultado Final',
+    'cartola-result-t': 'Diseño operativo',
+    'cartola-result-em': 'en producción',
+    'cartola-result-intro':
+      'La solución final establece las plantillas estándar de los formatos oficiales de Banchile Inversiones: portada con métricas clave, hoja de detalle y términos y condiciones, replicados como base para el resto de los documentos corporativos.',
+    'cartola-artifact-1-tag': 'Hoja Principal',
+    'cartola-artifact-1-desc':
+      'Patrimonio total, ganancia/pérdida y distribución como foco principal. Lenguaje simple y directo para decisiones rápidas.',
+    'cartola-artifact-2-tag': 'Hoja Interna',
+    'cartola-artifact-2-desc':
+      'Balance detallado de inversiones con jerarquía visual clara por producto y moneda.',
+    'cartola-artifact-3-tag': 'Términos y Condiciones',
+    'cartola-artifact-3-desc':
+      'Versión simplificada con lenguaje accesible, integrada visualmente al sistema de la cartola.',
+    'cartola-sec-9': 'Aprendizajes',
+    'cartola-learnings-t': 'Lo que me llevé',
+    'cartola-learnings-em': 'de este proyecto',
+    'cartola-outcome-pref': 'Prefirió la nueva versión',
+    'cartola-outcome-time': 'Tiempo promedio vs versión original',
+    'cartola-outcome-prod': 'Salida a producción en Banchile',
+    'cartola-learn-0-title': 'Claridad > completitud',
+    'cartola-learn-0-body':
+      'En productos financieros, mostrar menos pero mejor es más valioso que mostrar todo. La jerarquía no es decoración: es funcionalidad.',
+    'cartola-learn-1-title': 'Los datos guían las decisiones',
+    'cartola-learn-1-body':
+      'Cada iteración estuvo respaldada por métricas de test. Pasar de opinión a evidencia transformó la conversación con stakeholders.',
+    'cartola-learn-2-title': 'Product Designer = conector',
+    'cartola-learn-2-body':
+      'Trabajar en discovery, research, UI, hand-off y salida a producción como único diseñador me permitió ver cómo cada decisión afecta todo el sistema.',
+    'cartola-next-label': 'Siguiente caso',
+    'cartola-next-title1': '¿Quieres ver otro',
+    'cartola-next-title2': 'caso de estudio?',
+    'cartola-next-sub': 'Explora el caso Lirmi Familia o hablemos de tu próximo desafío.',
+    'cartola-btn-back': '← Volver al portfolio',
+    'cartola-btn-next': 'Ver caso Lirmi →',
   },
   pt: {
     'logo-tip': 'Cindy Arlette López Oportus',
@@ -234,7 +382,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'hero-title-2': 'complexos em produtos',
     'hero-title-3': 'claros e escaláveis.',
     'hero-sub':
-      'Com raízes em <strong>desenvolvimento frontend</strong>, design de ponta a ponta entendendo o código, o usuário e o negócio — menos fricção, melhores produtos.',
+      'Com raízes em <strong>desenvolvimento frontend</strong>, design de ponta a ponta entendendo o código, o usuário e o negócio. Menos fricção, melhores produtos.',
     years: 'anos',
     'strip-label': 'Skills & ferramentas',
     'about-label': 'Sobre mim',
@@ -383,7 +531,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-attr-2-title': 'Contexto educacional ativo',
     'lirmi-attr-2-body': 'Com filhos em escolas que já usam a plataforma Lirmi',
     'lirmi-attr-3-title': 'Tempo limitado',
-    'lirmi-attr-3-body': 'Precisam resolver tarefas rápido — sem curvas de aprendizagem',
+    'lirmi-attr-3-body': 'Precisam resolver tarefas rápido, sem curvas de aprendizagem',
     'lirmi-attr-4-title': 'Alta motivação',
     'lirmi-attr-4-body': 'Querem participar ativamente da educação de seus filhos',
     'lirmi-findings-t': 'O que o research',
@@ -431,6 +579,153 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-next-soon': 'Em breve',
     'lirmi-btn-view': 'Ver caso →',
     'lirmi-btn-back': '← Voltar ao portfólio',
+    // ── Cartola de Inversión ──────────────────────
+    'cartola-back': 'Voltar',
+    'cartola-case-num': 'Caso 02',
+    'cartola-subtitle': 'Redesign de cartela de investimento complexa',
+    'cartola-brief':
+      'Simplificação de informações, hierarquia visual e validação com usuários para melhorar a compreensão e a confiança no produto.',
+    'cartola-meta-role': 'Papel',
+    'cartola-meta-year': 'Ano',
+    'cartola-meta-platform': 'Suporte',
+    'cartola-meta-tools': 'Ferramentas',
+    'cartola-badge-before': 'Antes',
+    'cartola-badge-after': 'Depois',
+    'cartola-hero-title': 'Da confusão à clareza financeira',
+    'cartola-stat-interviews': 'Entrevistas em profundidade',
+    'cartola-stat-surveys': 'Pesquisas de preferência',
+    'cartola-stat-users': 'Usuários em teste de tarefas',
+    'cartola-stat-pref': 'Preferiram a nova versão',
+    'cartola-sec-1': 'Contexto',
+    'cartola-ctx-t1': 'O produto',
+    'cartola-ctx-p1a':
+      'A <strong>Cartela de Investimento</strong> é o documento principal que os clientes do Banchile usam para entender seu patrimônio, rentabilidade e composição de investimentos.',
+    'cartola-ctx-p1b':
+      'É um dos pontos de contato mais críticos com o cliente, distribuído mensalmente em versão física e digital.',
+    'cartola-ctx-t2': 'O desafio',
+    'cartola-ctx-p2a':
+      'A cartela acumulava anos de informações sem revisão estrutural. A versão existente não distinguia dados primários de secundários.',
+    'cartola-ctx-p2b':
+      'A equipe comercial relatava que clientes ligavam frequentemente com perguntas básicas sobre sua carteira, sinal de que o documento <strong>não cumpria sua função</strong>.',
+    'cartola-sec-2': 'Problema',
+    'cartola-problem-quote': '"Não sei se estou ganhando ou perdendo dinheiro."',
+    'cartola-problem-intro':
+      'Apesar de conter todas as informações necessárias, os usuários falhavam sistematicamente em tarefas básicas de leitura de carteira.',
+    'cartola-factor-1-title': 'Sobrecarga de informação',
+    'cartola-factor-1-body':
+      'Sem hierarquia clara, os usuários não sabiam onde olhar primeiro. Tudo competia pela mesma atenção visual.',
+    'cartola-factor-2-title': 'Métricas-chave enterradas',
+    'cartola-factor-2-body':
+      'Ganho/perda e patrimônio total, os dados mais procurados, não tinham protagonismo visual.',
+    'cartola-factor-3-title': 'Inconsistência físico/digital',
+    'cartola-factor-3-body':
+      'Design diferente entre versão impressa e digital gerava confusão e desconfiança na informação.',
+    'cartola-sec-3': 'Research',
+    'cartola-research-t': 'Pesquisa',
+    'cartola-research-em': 'mista e centrada em tarefas',
+    'cartola-research-intro':
+      'Combinei entrevistas para entender contexto e emoções com testes de tarefas mensuráveis para detectar exatamente onde a leitura falhava.',
+    'cartola-tech-0-title': 'Entrevistas',
+    'cartola-tech-0-desc':
+      'Compreensão do modelo mental do investidor e suas frustrações com o documento atual.',
+    'cartola-tech-1-title': 'Pesquisas',
+    'cartola-tech-1-desc':
+      'Teste de preferência visual entre versões do design para validar hierarquia e clareza percebida.',
+    'cartola-tech-2-title': 'Teste de tarefas',
+    'cartola-tech-2-desc':
+      'Medição de tempo e taxa de sucesso em 5 tarefas-chave em 3 versões do design.',
+    'cartola-tech-3-title': 'Teste A/B',
+    'cartola-tech-3-desc':
+      'Comparação direta entre cartela atual vs proposta com usuários reais do Banchile.',
+    'cartola-sec-4': 'Hipótese',
+    'cartola-hyp-eyebrow1': 'Hipótese de design',
+    'cartola-hyp-quote':
+      'Se priorizarmos patrimônio total, ganho/perda e composição como foco principal, os usuários identificarão sua situação financeira mais rápido e com maior confiança.',
+    'cartola-hyp-eyebrow2': 'Perguntas norteadoras',
+    'cartola-q1': 'Que informação um investidor busca primeiro ao abrir sua cartela?',
+    'cartola-q2': 'Que nível de detalhe um usuário não especialista precisa para tomar decisões?',
+    'cartola-sec-5': 'Descobertas',
+    'cartola-findings-t': 'O que a pesquisa',
+    'cartola-findings-em': 'revelou',
+    'cartola-ins-0-title': 'Hierarquia quebrada',
+    'cartola-ins-0-body':
+      'Excesso de informação sem ordem visual clara. Usuários escaneavam sem saber por onde começar.',
+    'cartola-ins-1-title': 'Métricas invisíveis',
+    'cartola-ins-1-body':
+      'Ganho/perda e patrimônio, os dados mais procurados, estavam enterrados entre informações secundárias.',
+    'cartola-ins-2-title': 'Gráficos confusos',
+    'cartola-ins-2-body':
+      'Representações visuais difíceis de interpretar para usuários sem perfil financeiro especialista.',
+    'cartola-ins-3-title': 'Dupla versão, dupla confusão',
+    'cartola-ins-3-body':
+      'Inconsistência entre cartela física e digital gerava desconfiança e dúvidas sobre a informação.',
+    'cartola-sec-6': 'Processo de design',
+    'cartola-process-t': 'De hipótese',
+    'cartola-process-em': 'à solução validada',
+    'cartola-process-intro':
+      'Iterei 4 versões do design, cada uma informada pelos resultados do teste anterior. Objetivo: encontrar o equilíbrio entre completude e clareza.',
+    'cartola-v0-label': 'Primeira proposta',
+    'cartola-v0-desc': 'Primeira iteração de design. Reestruturação de blocos semânticos e hierarquia visual inicial.',
+    'cartola-v1-label': 'Segunda proposta',
+    'cartola-v1-desc': 'Refinamento de blocos semânticos. Melhora de 50% na tarefa 1.',
+    'cartola-v2-label': 'Refinamento',
+    'cartola-v2-desc': 'Ênfase nas métricas principais. Redução de 40% no tempo médio.',
+    'cartola-v3-label': 'Resultado final',
+    'cartola-v3-desc': 'Hierarquia semântica completa. 75% dos usuários preferiram no teste final.',
+    'cartola-sec-7': 'Validação de Design',
+    'cartola-test-t': 'Mapas de calor',
+    'cartola-test-em': 'do processo iterativo',
+    'cartola-test-intro':
+      'Cada versão foi submetida a testes de usabilidade com usuários reais. Os mapas de calor revelam como o comportamento visual evoluiu: de cliques dispersos em V.0 ao foco total nas métricas-chave em V.2.',
+    'cartola-test-t1-label': 'Tarefa 1',
+    'cartola-test-t1-obj': 'Identifique o valor do seu investimento',
+    'cartola-test-t1-summary':
+      'Em V.0, os cliques estavam dispersos pela tela. Em V.1 e V.2, 100% dos usuários foram diretamente ao bloco de patrimônio total.',
+    'cartola-test-t1-v0-note': 'Cliques dispersos. Sem ponto focal claro. Alta taxa de erro.',
+    'cartola-test-t1-v1-note': 'Melhora significativa. Concentração na seção de patrimônio.',
+    'cartola-test-t1-v2-note': 'Foco total nas métricas-chave. Tempo médio reduzido 40%.',
+    'cartola-test-t3-label': 'Tarefa 3',
+    'cartola-test-t3-obj': 'Identifique quanto está rentando',
+    'cartola-test-t3-summary':
+      'A tarefa de rentabilidade passou de uma das mais confusas (71% de sucesso em V.0) para clareza total em V.2, com tempo médio de 7,3 segundos.',
+    'cartola-test-t3-v0-note': 'Alta dispersão. Rentabilidade enterrada entre dados secundários.',
+    'cartola-test-t3-v1-note': 'Hierarquia melhorada. Usuários localizam a seção mais rápido.',
+    'cartola-test-t3-v2-note': 'Sucesso total. Bloco de rentabilidade claramente identificável.',
+    'cartola-sec-8': 'Resultado Final',
+    'cartola-result-t': 'Design operacional',
+    'cartola-result-em': 'em produção',
+    'cartola-result-intro':
+      'A solução final define os modelos padrão dos formatos oficiais do Banchile Inversiones: capa com métricas-chave, folha de detalhes e termos e condições, replicados como base para os demais documentos corporativos.',
+    'cartola-artifact-1-tag': 'Folha Principal',
+    'cartola-artifact-1-desc':
+      'Patrimônio total, ganho/perda e distribuição como foco principal. Linguagem simples para decisões rápidas.',
+    'cartola-artifact-2-tag': 'Folha Interna',
+    'cartola-artifact-2-desc':
+      'Balanço detalhado de investimentos com hierarquia visual clara por produto e moeda.',
+    'cartola-artifact-3-tag': 'Termos e Condições',
+    'cartola-artifact-3-desc':
+      'Versão simplificada com linguagem acessível, integrada visualmente ao sistema da cartela.',
+    'cartola-sec-9': 'Aprendizados',
+    'cartola-learnings-t': 'O que aprendi',
+    'cartola-learnings-em': 'neste projeto',
+    'cartola-outcome-pref': 'Preferiram a nova versão',
+    'cartola-outcome-time': 'Tempo médio vs versão original',
+    'cartola-outcome-prod': 'Lançado em produção no Banchile',
+    'cartola-learn-0-title': 'Clareza > completude',
+    'cartola-learn-0-body':
+      'Em produtos financeiros, mostrar menos mas melhor é mais valioso do que mostrar tudo. Hierarquia não é decoração: é funcionalidade.',
+    'cartola-learn-1-title': 'Dados guiam decisões',
+    'cartola-learn-1-body':
+      'Cada iteração foi respaldada por métricas de teste. Passar de opinião a evidência transformou a conversa com stakeholders.',
+    'cartola-learn-2-title': 'Product Designer = conector',
+    'cartola-learn-2-body':
+      'Trabalhar em discovery, research, UI, hand-off e lançamento como único designer me permitiu ver como cada decisão afeta todo o sistema.',
+    'cartola-next-label': 'Próximo caso',
+    'cartola-next-title1': 'Quer ver outro',
+    'cartola-next-title2': 'estudo de caso?',
+    'cartola-next-sub': 'Explore o caso Lirmi Familia ou vamos conversar sobre seu próximo desafio.',
+    'cartola-btn-back': '← Voltar ao portfólio',
+    'cartola-btn-next': 'Ver caso Lirmi →',
   },
   en: {
     'logo-tip': 'Cindy Arlette López Oportus',
@@ -445,7 +740,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'hero-title-2': 'problems into clear',
     'hero-title-3': 'and scalable products.',
     'hero-sub':
-      'With roots in <strong>frontend development</strong>, I design end-to-end understanding code, users, and business — less friction, better products.',
+      'With roots in <strong>frontend development</strong>, I design end-to-end understanding code, users, and business. Less friction, better products.',
     years: 'years',
     'strip-label': 'Skills & tools',
     'about-label': 'About me',
@@ -595,7 +890,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-attr-2-title': 'Active educational context',
     'lirmi-attr-2-body': 'With children in schools already using the Lirmi platform',
     'lirmi-attr-3-title': 'Limited time',
-    'lirmi-attr-3-body': 'Need to resolve tasks quickly — no learning curves',
+    'lirmi-attr-3-body': 'Need to resolve tasks quickly, no learning curves',
     'lirmi-attr-4-title': 'High motivation',
     'lirmi-attr-4-body': "Want to actively participate in their children's education",
     'lirmi-findings-t': 'What the research',
@@ -643,5 +938,152 @@ export const translations: Record<Lang, Record<string, string>> = {
     'lirmi-next-soon': 'Coming soon',
     'lirmi-btn-view': 'View case →',
     'lirmi-btn-back': '← Back to portfolio',
+    // ── Cartola de Inversión ──────────────────────
+    'cartola-back': 'Back',
+    'cartola-case-num': 'Case 02',
+    'cartola-subtitle': 'Redesign of a complex financial statement',
+    'cartola-brief':
+      'Information simplification, visual hierarchy and user validation to improve understanding and trust in the product.',
+    'cartola-meta-role': 'Role',
+    'cartola-meta-year': 'Year',
+    'cartola-meta-platform': 'Format',
+    'cartola-meta-tools': 'Tools',
+    'cartola-badge-before': 'Before',
+    'cartola-badge-after': 'After',
+    'cartola-hero-title': 'From confusion to financial clarity',
+    'cartola-stat-interviews': 'In-depth interviews',
+    'cartola-stat-surveys': 'Preference surveys',
+    'cartola-stat-users': 'Users in task testing',
+    'cartola-stat-pref': 'Preferred the new version',
+    'cartola-sec-1': 'Context',
+    'cartola-ctx-t1': 'The product',
+    'cartola-ctx-p1a':
+      'The <strong>Investment Statement</strong> is the main document Banchile clients use to understand their assets, returns and investment composition.',
+    'cartola-ctx-p1b':
+      'It is one of the most critical client touchpoints, distributed monthly in both physical and digital format.',
+    'cartola-ctx-t2': 'The challenge',
+    'cartola-ctx-p2a':
+      'The statement had accumulated years of information without structural revision. The existing version did not distinguish between primary and secondary data.',
+    'cartola-ctx-p2b':
+      'The commercial team reported clients frequently calling with basic portfolio questions, a signal that the document <strong>was not fulfilling its purpose</strong>.',
+    'cartola-sec-2': 'Problem',
+    'cartola-problem-quote': '"I don\'t know if I\'m making or losing money."',
+    'cartola-problem-intro':
+      'Despite containing all necessary information, users systematically failed at basic portfolio reading tasks.',
+    'cartola-factor-1-title': 'Information overload',
+    'cartola-factor-1-body':
+      'Without clear hierarchy, users did not know where to look first. Everything competed for the same visual attention.',
+    'cartola-factor-2-title': 'Key metrics buried',
+    'cartola-factor-2-body':
+      'Gain/loss and total assets, the most sought-after data, had no visual prominence.',
+    'cartola-factor-3-title': 'Physical/digital inconsistency',
+    'cartola-factor-3-body':
+      'Different design between printed and digital versions created confusion and distrust in the information.',
+    'cartola-sec-3': 'Research',
+    'cartola-research-t': 'Mixed research',
+    'cartola-research-em': 'focused on tasks',
+    'cartola-research-intro':
+      'I combined interviews to understand context and emotions with measurable task tests to detect exactly where reading failed.',
+    'cartola-tech-0-title': 'Interviews',
+    'cartola-tech-0-desc':
+      'Understanding the investor\'s mental model and frustrations with the current document.',
+    'cartola-tech-1-title': 'Surveys',
+    'cartola-tech-1-desc':
+      'Visual preference tests between design versions to validate hierarchy and perceived clarity.',
+    'cartola-tech-2-title': 'Task tests',
+    'cartola-tech-2-desc':
+      'Measuring time and success rate on 5 key tasks across 3 design versions.',
+    'cartola-tech-3-title': 'A/B test',
+    'cartola-tech-3-desc':
+      'Direct comparison between current vs proposed statement with real Banchile users.',
+    'cartola-sec-4': 'Hypothesis',
+    'cartola-hyp-eyebrow1': 'Design hypothesis',
+    'cartola-hyp-quote':
+      'If we prioritize total assets, gain/loss and composition as the main focus, users will identify their financial situation faster and with greater confidence.',
+    'cartola-hyp-eyebrow2': 'Guiding questions',
+    'cartola-q1': 'What information does an investor look for first when opening their statement?',
+    'cartola-q2': 'What level of detail does a non-expert user need to make financial decisions?',
+    'cartola-sec-5': 'Findings',
+    'cartola-findings-t': 'What the research',
+    'cartola-findings-em': 'revealed',
+    'cartola-ins-0-title': 'Broken hierarchy',
+    'cartola-ins-0-body':
+      'Excess information with no clear visual order. Users scanned without knowing where to start.',
+    'cartola-ins-1-title': 'Invisible metrics',
+    'cartola-ins-1-body':
+      'Gain/loss and total assets, the most sought data, were buried among secondary information.',
+    'cartola-ins-2-title': 'Confusing charts',
+    'cartola-ins-2-body':
+      'Visual representations difficult to interpret for users without expert financial profiles.',
+    'cartola-ins-3-title': 'Two versions, double confusion',
+    'cartola-ins-3-body':
+      'Inconsistency between physical and digital statement generated distrust and doubts about the information.',
+    'cartola-sec-6': 'Design process',
+    'cartola-process-t': 'From hypothesis',
+    'cartola-process-em': 'to validated solution',
+    'cartola-process-intro':
+      'I iterated 4 design versions, each informed by the findings of the previous test. Goal: find the balance between completeness and clarity.',
+    'cartola-v0-label': 'First proposal',
+    'cartola-v0-desc': 'First design iteration. Initial restructuring of semantic blocks and visual hierarchy.',
+    'cartola-v1-label': 'Second proposal',
+    'cartola-v1-desc': 'Semantic block refinement. 50% improvement in task 1.',
+    'cartola-v2-label': 'Refinement',
+    'cartola-v2-desc': 'Emphasis on main metrics. 40% reduction in average time.',
+    'cartola-v3-label': 'Final result',
+    'cartola-v3-desc': 'Complete semantic hierarchy. 75% of users preferred it in the final test.',
+    'cartola-sec-7': 'Design Validation',
+    'cartola-test-t': 'Heatmaps',
+    'cartola-test-em': 'of the iterative process',
+    'cartola-test-intro':
+      'Every version was submitted to usability testing with real users. The heatmaps show how visual behavior evolved from scattered clicks in V.0 to total focus on key metrics in V.2.',
+    'cartola-test-t1-label': 'Task 1',
+    'cartola-test-t1-obj': 'Identify your investment amount',
+    'cartola-test-t1-summary':
+      'In V.0, clicks were scattered across the screen. In V.1 and V.2, 100% of users went directly to the total assets block.',
+    'cartola-test-t1-v0-note': 'Scattered clicks. No clear focal point. High error rate.',
+    'cartola-test-t1-v1-note': 'Significant improvement. Concentration on the assets section.',
+    'cartola-test-t1-v2-note': 'Total focus on key metrics. Average time reduced 40%.',
+    'cartola-test-t3-label': 'Task 3',
+    'cartola-test-t3-obj': 'Identify your returns',
+    'cartola-test-t3-summary':
+      'The returns task went from one of the most confusing (71% success in V.0) to total clarity in V.2, with an average time of 7.3 seconds.',
+    'cartola-test-t3-v0-note': 'High dispersion. Returns buried among secondary data.',
+    'cartola-test-t3-v1-note': 'Improved hierarchy. Users locate the section faster.',
+    'cartola-test-t3-v2-note': 'Total success. Returns block clearly identifiable.',
+    'cartola-sec-8': 'Final Result',
+    'cartola-result-t': 'Operational design',
+    'cartola-result-em': 'in production',
+    'cartola-result-intro':
+      'The final solution defines the standard templates for all official Banchile Inversiones document formats: cover with key metrics, detail sheet and terms and conditions, replicated as the foundation for the rest of their corporate documents.',
+    'cartola-artifact-1-tag': 'Main Page',
+    'cartola-artifact-1-desc':
+      'Total assets, gain/loss and distribution as the main focus. Simple and direct language for quick decisions.',
+    'cartola-artifact-2-tag': 'Internal Page',
+    'cartola-artifact-2-desc':
+      'Detailed investment balance with clear visual hierarchy by product and currency.',
+    'cartola-artifact-3-tag': 'Terms & Conditions',
+    'cartola-artifact-3-desc':
+      'Simplified version with accessible language, visually integrated into the statement system.',
+    'cartola-sec-9': 'Learnings',
+    'cartola-learnings-t': 'What I took away',
+    'cartola-learnings-em': 'from this project',
+    'cartola-outcome-pref': 'Preferred the new version',
+    'cartola-outcome-time': 'Average time vs original version',
+    'cartola-outcome-prod': 'Shipped to production at Banchile',
+    'cartola-learn-0-title': 'Clarity > completeness',
+    'cartola-learn-0-body':
+      'In financial products, showing less but better is more valuable than showing everything. Hierarchy is not decoration: it is functionality.',
+    'cartola-learn-1-title': 'Data drives decisions',
+    'cartola-learn-1-body':
+      'Every iteration was backed by test metrics. Moving from opinion to evidence transformed conversations with stakeholders.',
+    'cartola-learn-2-title': 'Product Designer = connector',
+    'cartola-learn-2-body':
+      'Working across discovery, research, UI, hand-off and launch as the sole designer let me see how every decision affects the entire system.',
+    'cartola-next-label': 'Next case',
+    'cartola-next-title1': 'Want to see another',
+    'cartola-next-title2': 'case study?',
+    'cartola-next-sub': 'Explore the Lirmi Familia case or let\'s talk about your next challenge.',
+    'cartola-btn-back': '← Back to portfolio',
+    'cartola-btn-next': 'View Lirmi case →',
   },
 }

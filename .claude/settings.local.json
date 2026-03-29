@@ -10,7 +10,18 @@
       "mcp__filesystem__read_text_file",
       "Bash(sips -g pixelWidth -g pixelHeight /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/miniatura.png)",
       "Bash(sips -s format jpeg -s formatOptions 85 -Z 1200 /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/miniatura.png --out /Users/bctecnologia/Documents/calo-portfolio-v2/public/og-preview.jpg)",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/bctecnologia/Documents/calo-portfolio-v2/public/og-preview.jpg)"
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/bctecnologia/Documents/calo-portfolio-v2/public/og-preview.jpg)",
+      "Bash(ls -lh /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/CV*)",
+      "Bash(ls -lh /Users/bctecnologia/Documents/calo-portfolio-v2/public/CV*)",
+      "Bash(ls -lh /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Cartola/*.png)",
+      "Bash(sips -s format jpeg -s formatOptions 80 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Cartola/img de test/tarea 3 - v.0.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/test-t3-v0.jpg\")",
+      "Bash(sips -s format jpeg -s formatOptions 80 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Cartola/img de test/tarea 3- v.1.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/test-t3-v1.jpg\")",
+      "Bash(sips -s format jpeg -s formatOptions 80 -Z 900 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/Cartola/img de test/tarea 3 - v.2.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/test-t3-v2.jpg\")",
+      "Bash(ls -lh /Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/test-*.jpg)",
+      "Bash(npx vue-tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 1400 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola/delivery.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/delivery.jpg\")",
+      "Bash(sips -s format jpeg -s formatOptions 78 -Z 1200 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola/delivery.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/delivery.jpg\")"
     ]
   }
 }
