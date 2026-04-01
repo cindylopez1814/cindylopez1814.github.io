@@ -199,10 +199,8 @@ const statusModules = [
             {{ t('lirmi-back') }}
           </button>
           <div class="case-eyebrow">
-            <span class="case-tag case-tag--coral">Brasil</span>
             <span class="case-tag case-tag--teal">Marketplace</span>
             <span class="case-tag case-tag--lav">AI-assisted</span>
-            <span class="case-tag case-tag--mcp">Figma MCP</span>
             <span class="case-num">Caso 03 · 2026</span>
           </div>
         </div>
