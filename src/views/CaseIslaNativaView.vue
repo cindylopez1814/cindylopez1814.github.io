@@ -10,7 +10,8 @@ import dsPrincipiosImg from '../assets/IMG/opt/isla-nativa/ds-principios.jpg'
 import dsColorImg from '../assets/IMG/opt/isla-nativa/ds-color.jpg'
 import homeDesktopImg from '../assets/IMG/opt/isla-nativa/home-desktop.jpg'
 import homeTabletImg from '../assets/IMG/opt/isla-nativa/home-tablet.jpg'
-import homeMobileImg from '../assets/IMG/opt/isla-nativa/home-mobile.jpg'
+import homeMobileImg from '../assets/IMG/opt/isla-nativa/hero-mobile.jpg'
+import homeMobileImgFull from '../assets/IMG/opt/isla-nativa/Home — Mobile.jpg'
 
 const FIGMA =
   'https://www.figma.com/design/bgY7HadfATSzqTphrUQ4Pp/Isla-Nativa-Travel-%E2%80%93-AI-Product-Design'
@@ -217,7 +218,8 @@ const statusModules = [
             </p>
             <p class="case-brief">
               Un experimento real: construir un producto digital completo usando IA como único
-              colaborador de ejecución. Sin templates, sin recursos externos, sin asistentes humanos.
+              colaborador de ejecución. Sin templates, sin recursos externos, sin asistentes
+              humanos.
             </p>
             <div class="case-meta">
               <div class="case-meta__item">
@@ -375,8 +377,8 @@ const statusModules = [
             </blockquote>
             <p class="exp-body">
               Sin templates, sin recursos externos. Cada frame, cada token, cada variante fue
-              generado mediante prompts en tiempo real usando Claude Code con el MCP de Figma. El rol
-              del designer no desapareció: se elevó a director de ejecución.
+              generado mediante prompts en tiempo real usando Claude Code con el MCP de Figma. El
+              rol del designer no desapareció: se elevó a director de ejecución.
             </p>
           </div>
           <div class="exp-diffs">
@@ -451,9 +453,7 @@ const statusModules = [
         <div class="figma-preview-cta">
           <div class="figma-preview-cta__text">
             <h3>User Flows · 101 nodos en 4 flujos</h3>
-            <p>
-              Discover &amp; Book · Compare Experiences · Complete Booking · Manage Reservation
-            </p>
+            <p>Discover &amp; Book · Compare Experiences · Complete Booking · Manage Reservation</p>
           </div>
           <a :href="FIGMA" target="_blank" rel="noopener" class="btn-figma btn-figma--lg">
             <svg width="14" height="14" viewBox="0 0 38 57" fill="none" aria-hidden="true">
@@ -619,7 +619,7 @@ const statusModules = [
             <p class="img-label">Mobile — 390px</p>
             <div
               class="img-block img-block--clickable img-block--mobile-full"
-              @click="openModal(homeMobileImg, 'Home Mobile – Isla Nativa')"
+              @click="openModal(homeMobileImgFull, 'Home Mobile – Isla Nativa')"
             >
               <img :src="homeMobileImg" alt="Home Mobile – Isla Nativa" />
               <span class="img-zoom" aria-hidden="true">🔍</span>
@@ -673,7 +673,13 @@ const statusModules = [
           <div v-for="m in statusModules" :key="m.name" class="status-row">
             <span class="status-name">{{ m.name }}</span>
             <span :class="['status-badge', 'status-badge--' + m.status]">
-              {{ m.status === 'done' ? 'Completado' : m.status === 'progress' ? 'En progreso' : 'Pendiente' }}
+              {{
+                m.status === 'done'
+                  ? 'Completado'
+                  : m.status === 'progress'
+                    ? 'En progreso'
+                    : 'Pendiente'
+              }}
             </span>
           </div>
         </div>
@@ -689,28 +695,40 @@ const statusModules = [
               <span class="designer-role__icon">🧭</span>
               <div>
                 <strong>Decisiones de arquitectura</strong>
-                <p>Qué páginas existen, cómo se nombran, qué jerarquía tienen. La IA propone; el diseñador define.</p>
+                <p>
+                  Qué páginas existen, cómo se nombran, qué jerarquía tienen. La IA propone; el
+                  diseñador define.
+                </p>
               </div>
             </div>
             <div class="designer-role__item">
               <span class="designer-role__icon">🔤</span>
               <div>
                 <strong>Semántica de tokens</strong>
-                <p>Nombrar un color <em>color/feedback/warning</em> en vez de <em>orange-500</em> es una decisión conceptual, no técnica.</p>
+                <p>
+                  Nombrar un color <em>color/feedback/warning</em> en vez de <em>orange-500</em> es
+                  una decisión conceptual, no técnica.
+                </p>
               </div>
             </div>
             <div class="designer-role__item">
               <span class="designer-role__icon">👁</span>
               <div>
                 <strong>Coherencia visual</strong>
-                <p>Detectar cuándo algo no comunica lo correcto aunque técnicamente esté "bien". La IA ejecuta; el ojo humano valida.</p>
+                <p>
+                  Detectar cuándo algo no comunica lo correcto aunque técnicamente esté "bien". La
+                  IA ejecuta; el ojo humano valida.
+                </p>
               </div>
             </div>
             <div class="designer-role__item">
               <span class="designer-role__icon">🔄</span>
               <div>
                 <strong>Dirección iterativa</strong>
-                <p>Cada prompt es una decisión de diseño. La calidad del output depende directamente de la calidad del criterio humano.</p>
+                <p>
+                  Cada prompt es una decisión de diseño. La calidad del output depende directamente
+                  de la calidad del criterio humano.
+                </p>
               </div>
             </div>
           </div>
@@ -1098,11 +1116,14 @@ const statusModules = [
 .case-main {
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 var(--section-padding-x);
+  padding: clamp(48px, 6vw, 80px) var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(64px, 8vw, 112px);
 }
 
 .case-section {
-  padding: clamp(56px, 8vw, 96px) 0;
+  padding: clamp(56px, 4vw, 96px) 0;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -1362,7 +1383,9 @@ const statusModules = [
   border-left: 4px solid var(--accent);
   border-radius: var(--radius-lg);
   padding: 20px 24px;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .process-card:hover {
@@ -1720,7 +1743,7 @@ const statusModules = [
   border-right: none;
 }
 
-.designer-role__item:nth-last-child(-n+2) {
+.designer-role__item:nth-last-child(-n + 2) {
   border-bottom: none;
 }
 
@@ -1731,7 +1754,7 @@ const statusModules = [
   .designer-role__item:last-child {
     border-bottom: none;
   }
-  .designer-role__item:nth-last-child(-n+2) {
+  .designer-role__item:nth-last-child(-n + 2) {
     border-bottom: 1px solid var(--color-border);
   }
   .designer-role__item:last-child {
@@ -1845,7 +1868,7 @@ const statusModules = [
 }
 
 .img-block--mobile-full {
-  /* sin recorte — muestra la imagen completa en alta calidad */
+  height: 480px;
 }
 
 .img-block--mobile-full img {
@@ -2046,6 +2069,7 @@ const statusModules = [
   align-items: center;
   justify-content: center;
   padding: 24px;
+  overflow: scroll;
 }
 
 .modal-close {
@@ -2071,8 +2095,9 @@ const statusModules = [
 }
 
 .modal-img {
-  max-width: 90vw;
-  max-height: 90vh;
+  display: flex;
+  position: absolute;
+  top: 70px;
   object-fit: contain;
   border-radius: var(--radius-sm);
 }

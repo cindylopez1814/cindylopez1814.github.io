@@ -1554,7 +1554,9 @@ const learnings = computed(() => [
   padding: 11px 22px;
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .btn-next:hover {
