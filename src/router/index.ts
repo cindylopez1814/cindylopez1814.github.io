@@ -18,6 +18,10 @@ const router = createRouter({
       path: '/case/cartola',
       component: () => import('../views/CaseCartolaView.vue'),
     },
+    {
+      path: '/case/isla-nativa',
+      component: () => import('../views/CaseIslaNativaView.vue'),
+    },
   ],
 })
 

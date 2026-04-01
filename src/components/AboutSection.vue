@@ -172,9 +172,9 @@ const skills = [
           </article>
 
           <!-- Proyecto 3 — Isla Nativa Travel -->
-          <article class="proj-card">
+          <article class="proj-card proj-card--link" @click="router.push('/case/isla-nativa')" role="button" tabindex="0" @keydown.enter="router.push('/case/isla-nativa')">
             <div class="proj-thumb">
-              <span class="proj-badge proj-badge--wip">🚧 {{ t('proj-wip') }}</span>
+              <span class="proj-badge proj-badge--active">✦ En diseño activo</span>
               <div class="proj-img-wrap">
                 <img :src="islaNativaImg" alt="Isla Nativa Travel preview" class="proj-img" />
               </div>
@@ -187,7 +187,7 @@ const skills = [
               </div>
               <h3 class="proj-title">{{ t('p3-title') }}</h3>
               <p class="proj-desc">{{ t('p3-desc') }}</p>
-              <span class="proj-link proj-link--disabled">{{ t('proj-wip') }}</span>
+              <span class="proj-link">{{ t('proj-view') }} →</span>
             </div>
           </article>
         </div>
@@ -519,6 +519,18 @@ const skills = [
 
 .proj-badge--wip {
   color: var(--color-ink3);
+}
+
+.proj-badge--active {
+  color: #e8714a;
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(232, 113, 74, 0.35);
+}
+
+.dark .proj-badge--active {
+  background: rgba(20, 18, 14, 0.82);
+  border-color: rgba(232, 113, 74, 0.35);
+  color: #e8714a;
 }
 
 /* ── Card body ── */

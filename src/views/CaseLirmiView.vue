@@ -519,6 +519,7 @@ const learnings = computed(() => [
    BASE
 ══════════════════════════════════════════ */
 .case-page {
+  --accent: var(--color-sage);
   background: var(--color-bg);
   min-height: 100vh;
 }
@@ -534,7 +535,7 @@ const learnings = computed(() => [
   overflow: hidden;
 }
 
-/* Sage glow top-left */
+/* Accent glow top-left */
 .case-hero::before {
   content: '';
   position: absolute;
@@ -542,7 +543,7 @@ const learnings = computed(() => [
   left: -80px;
   width: 520px;
   height: 520px;
-  background: radial-gradient(circle, rgba(106, 148, 112, 0.1) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(106, 148, 112, 0.08) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -633,17 +634,17 @@ const learnings = computed(() => [
 
 .case-title {
   font-family: var(--font-serif);
-  font-size: clamp(48px, 8vw, 88px);
-  font-weight: 500;
+  font-size: clamp(36px, 5.5vw, 72px);
+  font-weight: 400;
   line-height: 1.05;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   color: var(--color-ink);
   margin: 0 0 16px;
 }
 
 .case-title em {
   font-style: italic;
-  color: var(--color-sage);
+  color: var(--accent);
 }
 
 .case-subtitle {
@@ -801,10 +802,12 @@ const learnings = computed(() => [
    STATS STRIP
 ══════════════════════════════════════════ */
 .stats-strip {
-  background: var(--color-bg2);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-ink);
   padding: clamp(28px, 4vw, 40px) var(--section-padding-x);
+}
+
+.dark .stats-strip {
+  background: var(--color-bg2);
 }
 
 .stats-inner {
@@ -828,25 +831,35 @@ const learnings = computed(() => [
 .stat__num {
   font-family: var(--font-serif);
   font-size: clamp(28px, 4vw, 42px);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  color: var(--color-sage);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  line-height: 1;
 }
 
 .stat__label {
   font-family: var(--font-mono);
   font-size: 10px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-ink3);
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
+  max-width: 120px;
+}
+
+.dark .stat__label {
+  color: var(--color-ink3);
 }
 
 .stat-divider {
   width: 1px;
   height: 44px;
-  background: var(--color-border2);
+  background: rgba(255, 255, 255, 0.12);
   flex-shrink: 0;
+}
+
+.dark .stat-divider {
+  background: var(--color-border2);
 }
 
 @media (max-width: 520px) {
@@ -883,33 +896,34 @@ const learnings = computed(() => [
 .case-section__label {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-mono);
   font-size: 10px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-ink3);
   margin-bottom: 24px;
 }
 
 .sec-num {
-  color: var(--color-sage);
-  font-size: 9px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: clamp(22px, 3.5vw, 36px);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.18;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
   color: var(--color-ink);
   margin: 0 0 20px;
 }
 
 .section-title em {
   font-style: italic;
-  color: var(--color-sage);
+  color: var(--accent);
 }
 
 .section-intro {
@@ -949,66 +963,70 @@ const learnings = computed(() => [
 
 /* ── Problem section ── */
 .problem-section {
-  background: var(--color-bg2);
-  margin: 0 calc(-1 * var(--section-padding-x));
-  padding-left: var(--section-padding-x);
-  padding-right: var(--section-padding-x);
-  border-radius: 0;
+  background: var(--color-surface);
+  padding: clamp(32px, 4vw, 56px) clamp(24px, 4vw, 56px);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--accent);
 }
 
 .problem-quote {
   font-family: var(--font-serif);
-  font-size: clamp(18px, 3vw, 28px);
+  font-size: clamp(22px, 3vw, 36px);
   font-style: italic;
   color: var(--color-ink);
-  line-height: 1.4;
-  margin: 0 0 40px;
-  padding-left: 20px;
-  border-left: 3px solid var(--color-sage);
-  max-width: 680px;
+  line-height: 1.3;
+  margin: 0;
 }
 
-.problem-detail p {
-  font-size: 14.5px;
+.problem-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.problem-detail > p {
+  font-size: 15px;
   color: var(--color-ink2);
-  line-height: 1.75;
-  margin: 0 0 28px;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .problem-factors {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .problem-factors {
+    grid-template-columns: 1fr;
+  }
 }
 
 .factor {
   display: flex;
-  gap: 14px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 20px;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .factor__icon {
-  font-size: 22px;
+  font-size: 20px;
   flex-shrink: 0;
-  line-height: 1;
   margin-top: 2px;
 }
 
 .factor strong {
   display: block;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--color-ink);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .factor p {
   font-size: 13px;
   color: var(--color-ink2);
-  line-height: 1.65;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -1076,27 +1094,19 @@ const learnings = computed(() => [
 /* ── Hypothesis section ── */
 .hyp-section {
   background: var(--color-ink);
-  margin: 0 calc(-1 * var(--section-padding-x));
-  padding-left: var(--section-padding-x);
-  padding-right: var(--section-padding-x);
+  padding: clamp(40px, 5vw, 64px) clamp(28px, 4vw, 56px);
+  border-radius: var(--radius-lg);
 }
 
 .dark .hyp-section {
   background: var(--color-bg2);
 }
 
-.hyp-section .case-section__label {
-  color: rgba(245, 242, 238, 0.5);
-}
-
-.hyp-section .sec-num {
-  color: var(--color-sage);
-}
-
 .hyp-grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: clamp(40px, 6vw, 72px);
+  gap: 48px;
+  align-items: start;
 }
 
 @media (max-width: 720px) {
@@ -1108,10 +1118,11 @@ const learnings = computed(() => [
 .hyp-eyebrow {
   display: block;
   font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(245, 242, 238, 0.45);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 16px;
 }
 
@@ -1121,42 +1132,45 @@ const learnings = computed(() => [
 
 .hyp-quote {
   font-family: var(--font-serif);
-  font-size: clamp(18px, 2.8vw, 26px);
+  font-size: clamp(18px, 2.8vw, 28px);
   font-style: italic;
   color: #f5f2ee;
-  line-height: 1.45;
+  line-height: 1.4;
   margin: 0;
-  padding-left: 20px;
-  border-left: 3px solid var(--color-sage);
 }
 
 .dark .hyp-quote {
   color: var(--color-ink);
 }
 
+.hyp-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .question {
   display: flex;
   gap: 14px;
-  margin-bottom: 20px;
   align-items: flex-start;
 }
 
 .question-num {
   font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 500;
-  background: rgba(106, 148, 112, 0.25);
-  color: var(--color-sage);
-  border-radius: 6px;
-  padding: 4px 8px;
+  font-weight: 700;
+  color: var(--accent);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+  padding: 2px 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
 }
 
 .question p {
-  font-size: 13.5px;
-  color: rgba(245, 242, 238, 0.75);
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
   margin: 0;
 }
 
@@ -1389,7 +1403,7 @@ const learnings = computed(() => [
   color: var(--color-sage);
   background: color-mix(in srgb, var(--color-sage) 10%, transparent);
   border: 1px solid color-mix(in srgb, var(--color-sage) 25%, transparent);
-  border-radius: 20px;
+  border-radius: var(--radius-full);
   padding: 3px 10px;
   margin-bottom: 10px;
 }
@@ -1467,10 +1481,13 @@ const learnings = computed(() => [
    FOOTER CTA
 ══════════════════════════════════════════ */
 .case-footer {
-  background: var(--color-bg2);
-  border-top: 1px solid var(--color-border);
+  background: var(--color-ink);
   padding: clamp(56px, 8vw, 96px) var(--section-padding-x);
   text-align: center;
+}
+
+.dark .case-footer {
+  background: var(--color-bg2);
 }
 
 .case-footer__inner {
@@ -1481,33 +1498,40 @@ const learnings = computed(() => [
 .case-footer__label {
   font-family: var(--font-mono);
   font-size: 10px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-ink3);
-  margin: 0 0 12px;
+  color: var(--accent);
+  margin: 0 0 16px;
 }
 
 .case-footer__title {
   font-family: var(--font-serif);
-  font-size: clamp(28px, 5vw, 48px);
-  font-weight: 500;
-  letter-spacing: -0.03em;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  letter-spacing: -0.01em;
   line-height: 1.15;
+  color: #f5f2ee;
+  margin: 0 0 16px;
+}
+
+.dark .case-footer__title {
   color: var(--color-ink);
-  margin: 0 0 12px;
 }
 
 .case-footer__title em {
   font-style: italic;
-  color: var(--color-lav);
+  color: var(--accent);
 }
 
 .case-footer__sub {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--color-ink3);
+  font-size: 14px;
+  color: rgba(245, 242, 238, 0.55);
   margin: 0 0 32px;
-  letter-spacing: 0.04em;
+  line-height: 1.6;
+}
+
+.dark .case-footer__sub {
+  color: var(--color-ink2);
 }
 
 .case-footer__btns {
@@ -1521,25 +1545,26 @@ const learnings = computed(() => [
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--color-bg);
-  background: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
   border: none;
   padding: 11px 22px;
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: background var(--transition-fast);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
 .btn-next:hover {
-  background: var(--color-sage);
+  opacity: 0.88;
+  transform: translateY(-1px);
 }
 
 .dark .btn-next {
   color: var(--color-bg);
-  background: var(--color-ink);
+  background: var(--accent);
 }
 
 .btn-next__wip {
@@ -1557,9 +1582,9 @@ const learnings = computed(() => [
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 500;
-  color: var(--color-ink2);
+  color: rgba(245, 242, 238, 0.6);
   background: transparent;
-  border: 1.5px solid var(--color-border2);
+  border: 1.5px solid rgba(245, 242, 238, 0.2);
   border-radius: var(--radius-full);
   padding: 11px 20px;
   cursor: pointer;
@@ -1569,8 +1594,18 @@ const learnings = computed(() => [
 }
 
 .btn-back-home:hover {
-  color: var(--color-sage);
-  border-color: var(--color-sage);
+  color: rgba(245, 242, 238, 0.9);
+  border-color: rgba(245, 242, 238, 0.5);
+}
+
+.dark .btn-back-home {
+  color: var(--color-ink2);
+  border-color: var(--color-border2);
+}
+
+.dark .btn-back-home:hover {
+  color: var(--color-ink);
+  border-color: var(--color-ink);
 }
 
 /* ══════════════════════════════════════════
@@ -1623,10 +1658,10 @@ const learnings = computed(() => [
 }
 
 .modal-img {
-  max-width: 92vw;
-  max-height: 88vh;
+  max-width: 90vw;
+  max-height: 90vh;
   object-fit: contain;
-  border-radius: var(--radius-lg);
+  border-radius: 8px;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
 }
 

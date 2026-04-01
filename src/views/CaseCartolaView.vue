@@ -723,7 +723,7 @@ const quotes = [
         <p class="case-footer__sub">{{ t('cartola-next-sub') }}</p>
         <div class="case-footer__btns">
           <button class="btn-back-home" @click="goBack">{{ t('cartola-btn-back') }}</button>
-          <button class="btn-next" @click="router.push('/case/lirmi')">
+          <button class="btn-next" @click="router.push('/case/isla-nativa')">
             {{ t('cartola-btn-next') }}
           </button>
         </div>
@@ -759,7 +759,7 @@ const quotes = [
 /* ══ HERO ══════════════════════════════════════════════════ */
 .case-hero {
   padding: calc(var(--nav-height) + clamp(40px, 6vw, 72px)) var(--section-padding-x)
-    clamp(64px, 8vw, 100px);
+    clamp(48px, 6vw, 80px);
   background: var(--color-bg);
   position: relative;
   overflow: hidden;
@@ -769,9 +769,9 @@ const quotes = [
   content: '';
   position: absolute;
   top: -80px;
-  right: -100px;
-  width: 540px;
-  height: 540px;
+  left: -80px;
+  width: 520px;
+  height: 520px;
   background: radial-gradient(circle, rgba(138, 124, 184, 0.08) 0%, transparent 65%);
   pointer-events: none;
 }
@@ -833,6 +833,11 @@ const quotes = [
   color: #1e3a5f;
 }
 
+.dark .case-tag--navy {
+  background: rgba(100, 140, 200, 0.14);
+  color: #8ab0d8;
+}
+
 .case-tag--lav {
   background: var(--accent-light);
   color: var(--accent);
@@ -864,11 +869,12 @@ const quotes = [
 
 .case-title {
   font-family: var(--font-serif);
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(36px, 5.5vw, 72px);
   font-weight: 400;
   line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--color-ink);
-  margin: 0 0 12px;
+  margin: 0 0 16px;
 }
 
 .case-title em {
@@ -927,7 +933,7 @@ const quotes = [
 .hero-composition {
   position: relative;
   min-height: 460px;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
@@ -935,7 +941,7 @@ const quotes = [
   position: absolute;
   inset: 0;
   background: linear-gradient(145deg, #2c3e6e 0%, #3e2f78 100%);
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
 }
 
 /* ── Before / After documents ── */
@@ -981,10 +987,20 @@ const quotes = [
   border: none;
 }
 
+.dark .doc-badge--before {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .doc-badge--after {
   background: #8a7cb8;
   color: #fff;
   border: none;
+}
+
+.dark .doc-badge--after {
+  background: rgba(138, 124, 184, 0.5);
+  color: #fff;
 }
 
 .doc-img {
@@ -1023,10 +1039,12 @@ const quotes = [
 
 /* ══ STATS STRIP ═══════════════════════════════════════════ */
 .stats-strip {
-  background: var(--color-bg2);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-ink);
   padding: clamp(28px, 4vw, 40px) var(--section-padding-x);
+}
+
+.dark .stats-strip {
+  background: var(--color-bg2);
 }
 
 .stats-inner {
@@ -1050,8 +1068,8 @@ const quotes = [
 .stat__num {
   font-family: var(--font-serif);
   font-size: clamp(28px, 4vw, 42px);
-  font-weight: 500;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   color: var(--accent);
   line-height: 1;
 }
@@ -1059,19 +1077,26 @@ const quotes = [
 .stat__label {
   font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-ink3);
+  color: rgba(255, 255, 255, 0.5);
   text-align: center;
   max-width: 120px;
+}
+
+.dark .stat__label {
+  color: var(--color-ink3);
 }
 
 .stat-divider {
   width: 1px;
   height: 44px;
-  background: var(--color-border2);
+  background: rgba(255, 255, 255, 0.12);
   flex-shrink: 0;
+}
+
+.dark .stat-divider {
+  background: var(--color-border2);
 }
 
 @media (max-width: 860px) and (min-width: 521px) {
@@ -1130,23 +1155,23 @@ const quotes = [
   gap: 10px;
   font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-ink3);
 }
 
 .sec-num {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 700;
   color: var(--accent);
 }
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(26px, 3.5vw, 40px);
   font-weight: 400;
   line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--color-ink);
   margin: 0;
 }
@@ -1373,6 +1398,10 @@ const quotes = [
   border-radius: var(--radius-lg);
 }
 
+.dark .hyp-section {
+  background: var(--color-bg2);
+}
+
 .hyp-grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -1397,13 +1426,21 @@ const quotes = [
   margin-bottom: 16px;
 }
 
+.dark .hyp-eyebrow {
+  color: var(--color-ink3);
+}
+
 .hyp-quote {
   font-family: var(--font-serif);
   font-size: clamp(18px, 2.8vw, 28px);
   font-style: italic;
-  color: #fff;
+  color: #f5f2ee;
   line-height: 1.4;
   margin: 0;
+}
+
+.dark .hyp-quote {
+  color: var(--color-ink);
 }
 
 .hyp-questions {
@@ -1435,6 +1472,10 @@ const quotes = [
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.72);
   margin: 0;
+}
+
+.dark .question p {
+  color: var(--color-ink2);
 }
 
 /* ── Insights ── */
@@ -2082,6 +2123,10 @@ const quotes = [
   pointer-events: none;
 }
 
+.dark .artifact-zoom-hint {
+  background: rgba(30, 30, 28, 0.85);
+}
+
 /* ══ HAND-OFF ══════════════════════════════════════════════ */
 .handoff-img-wrap {
   position: relative;
@@ -2205,10 +2250,14 @@ const quotes = [
 
 /* ══ FOOTER CTA ════════════════════════════════════════════ */
 .case-footer {
-  background: var(--color-surface);
+  background: var(--color-ink);
   padding: clamp(56px, 7vw, 96px) var(--section-padding-x);
   text-align: center;
   margin-top: clamp(40px, 5vw, 64px);
+}
+
+.dark .case-footer {
+  background: var(--color-bg2);
 }
 
 .case-footer__inner {
@@ -2223,20 +2272,24 @@ const quotes = [
 .case-footer__label {
   font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-ink3);
-  margin: 0;
+  color: var(--accent);
+  margin: 0 0 16px;
 }
 
 .case-footer__title {
   font-family: var(--font-serif);
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 400;
+  letter-spacing: -0.01em;
   line-height: 1.15;
+  color: #f5f2ee;
+  margin: 0 0 16px;
+}
+
+.dark .case-footer__title {
   color: var(--color-ink);
-  margin: 0;
 }
 
 .case-footer__title em {
@@ -2245,10 +2298,14 @@ const quotes = [
 }
 
 .case-footer__sub {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
+  color: rgba(245, 242, 238, 0.55);
+  margin: 0 0 32px;
+}
+
+.dark .case-footer__sub {
   color: var(--color-ink2);
-  margin: 0;
 }
 
 .case-footer__btns {
@@ -2266,9 +2323,9 @@ const quotes = [
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 500;
-  color: var(--color-ink2);
+  color: rgba(245, 242, 238, 0.6);
   background: transparent;
-  border: 1.5px solid var(--color-border2);
+  border: 1.5px solid rgba(245, 242, 238, 0.2);
   border-radius: var(--radius-full);
   padding: 10px 20px;
   cursor: pointer;
@@ -2277,7 +2334,17 @@ const quotes = [
     border-color var(--transition-fast);
 }
 
+.dark .btn-back-home {
+  color: var(--color-ink2);
+  border-color: var(--color-border2);
+}
+
 .btn-back-home:hover {
+  color: rgba(245, 242, 238, 0.9);
+  border-color: rgba(245, 242, 238, 0.5);
+}
+
+.dark .btn-back-home:hover {
   color: var(--color-ink);
   border-color: var(--color-ink);
 }
@@ -2289,16 +2356,22 @@ const quotes = [
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
-  background: var(--color-ink);
+  color: var(--color-bg);
+  background: var(--accent);
   border: none;
   border-radius: var(--radius-full);
   padding: 10px 22px;
   cursor: pointer;
-  transition: background var(--transition-fast);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
 .btn-next:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.dark .btn-next {
+  color: var(--color-bg);
   background: var(--accent);
 }
 
@@ -2307,38 +2380,39 @@ const quotes = [
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(10, 10, 10, 0.9);
+  background: rgba(10, 10, 8, 0.88);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 }
 
 .modal-img {
-  max-width: 92vw;
+  max-width: 90vw;
   max-height: 90vh;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
 }
 
 .modal-close {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 24px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  font-size: 16px;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.15s ease;
+  z-index: 10000;
 }
 
 .modal-close:hover {

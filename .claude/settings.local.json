@@ -21,7 +21,8 @@
       "Bash(npx vue-tsc:*)",
       "Bash(npx vite:*)",
       "Bash(sips -s format jpeg -s formatOptions 82 -Z 1400 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola/delivery.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/delivery.jpg\")",
-      "Bash(sips -s format jpeg -s formatOptions 78 -Z 1200 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola/delivery.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/delivery.jpg\")"
+      "Bash(sips -s format jpeg -s formatOptions 78 -Z 1200 \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/cartola/delivery.png\" --out \"/Users/bctecnologia/Documents/calo-portfolio-v2/src/assets/IMG/opt/cartola/delivery.jpg\")",
+      "Bash(npm run:*)"
     ]
   }
 }
