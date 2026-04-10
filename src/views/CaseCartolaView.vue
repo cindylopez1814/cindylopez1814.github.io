@@ -156,9 +156,10 @@ const testGroups = [
 ]
 
 const learnings = computed(() => [
-  { icon: '🎯', title: t('cartola-learn-0-title'), body: t('cartola-learn-0-body') },
-  { icon: '📊', title: t('cartola-learn-1-title'), body: t('cartola-learn-1-body') },
-  { icon: '🔗', title: t('cartola-learn-2-title'), body: t('cartola-learn-2-body') },
+  { icon: '🧠', title: t('cartola-learn-0-title'), body: t('cartola-learn-0-body') },
+  { icon: '🎯', title: t('cartola-learn-1-title'), body: t('cartola-learn-1-body') },
+  { icon: '✍️', title: t('cartola-learn-2-title'), body: t('cartola-learn-2-body') },
+  { icon: '🔥', title: t('cartola-learn-3-title'), body: t('cartola-learn-3-body') },
 ])
 
 const quotes = [
@@ -246,7 +247,10 @@ const quotes = [
 
             <!-- Headline label -->
             <div class="hero-comp__label">
-              <p class="hero-comp__headline">{{ t('cartola-hero-title') }}</p>
+              <p class="hero-comp__headline">
+                <span class="hero-comp__headline-top">De la confusión</span>
+                <span class="hero-comp__headline-bot"><em>a la claridad financiera</em></span>
+              </p>
             </div>
           </div>
         </div>
@@ -700,6 +704,10 @@ const quotes = [
             <span class="outcome-num">100%</span>
             <span class="outcome-label">{{ t('cartola-outcome-prod') }}</span>
           </div>
+          <div class="outcome-stat">
+            <span class="outcome-num">↑</span>
+            <span class="outcome-label">{{ t('cartola-outcome-trust') }}</span>
+          </div>
         </div>
 
         <div class="learnings-grid">
@@ -1019,22 +1027,43 @@ const quotes = [
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 28px 20px 20px;
-  background: linear-gradient(to top, rgba(20, 15, 50, 0.75) 0%, transparent 100%);
-  text-align: center;
+  padding: clamp(48px, 8vw, 72px) clamp(20px, 3vw, 28px) clamp(20px, 2.5vw, 26px);
+  background: linear-gradient(to top, rgba(12, 8, 40, 0.88) 0%, rgba(12, 8, 40, 0.5) 55%, transparent 100%);
+  text-align: left;
   z-index: 4;
 }
 
 .hero-comp__headline {
-  font-family: var(--font-serif);
-  font-size: clamp(15px, 1.8vw, 22px);
-  font-style: italic;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.95);
   margin: 0;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-comp__headline-top {
+  font-family: var(--font-mono);
+  font-size: clamp(9px, 1vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hero-comp__headline-bot {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.4vw, 30px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.97);
+  display: block;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hero-comp__headline-bot em {
+  font-style: italic;
 }
 
 /* ══ STATS STRIP ═══════════════════════════════════════════ */
