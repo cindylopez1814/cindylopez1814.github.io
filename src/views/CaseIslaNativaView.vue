@@ -15,6 +15,7 @@ import homeMobileImgFull from '../assets/IMG/opt/isla-nativa/Home — Mobile.jpg
 
 const FIGMA =
   'https://www.figma.com/design/bgY7HadfATSzqTphrUQ4Pp/Isla-Nativa-Travel-%E2%80%93-AI-Product-Design'
+const DEMO = 'https://isla-nativa.vercel.app/'
 
 const router = useRouter()
 const { t } = useLang()
@@ -236,6 +237,11 @@ const statusModules = [
                 <span class="case-meta__label">{{ t('lirmi-meta-tools') }}</span>
                 <span class="case-meta__val">Figma MCP · Variables · Claude Code</span>
               </div>
+            </div>
+            <div class="case-hero__actions">
+              <a :href="DEMO" target="_blank" rel="noopener" class="btn-demo">
+                Ver demo en vivo ↗
+              </a>
             </div>
           </div>
 
@@ -954,6 +960,32 @@ const statusModules = [
   font-size: 12px;
   color: var(--color-ink2);
   font-weight: 500;
+}
+
+.case-hero__actions {
+  padding-top: 20px;
+}
+
+.btn-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-demo:hover {
+  background: var(--accent);
+  color: var(--color-bg);
 }
 
 /* ── Browser mockup ── */
